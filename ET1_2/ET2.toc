@@ -1,0 +1,28 @@
+\contentsline {section}{\numberline {1}基本电路元件伏安特性的测量 \hskip 1em\relax \heiti 预习报告}{3}{section.1}%
+\contentsline {subsection}{\numberline {1.1}实验目的}{3}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}仪器用具}{3}{subsection.1.2}%
+\contentsline {subsection}{\numberline {1.3}原理概述}{3}{subsection.1.3}%
+\contentsline {subsection}{\numberline {1.4}实验预习题}{4}{subsection.1.4}%
+\contentsline {section}{\numberline {2}基本电路元件伏安特性的测量 \hskip 1em\relax \heiti 实验记录}{6}{section.2}%
+\contentsline {subsection}{\numberline {2.1}实验内容、步骤与结果}{6}{subsection.2.1}%
+\contentsline {subsubsection}{\numberline {2.1.1}操作步骤记录}{6}{subsubsection.2.1.1}%
+\contentsline {subsubsection}{\numberline {2.1.2}测试线性电阻元件的伏安特性}{6}{subsubsection.2.1.2}%
+\contentsline {subsubsection}{\numberline {2.1.3}测试非线性电阻12V白炽灯的伏安特性}{8}{subsubsection.2.1.3}%
+\contentsline {subsubsection}{\numberline {2.1.4}测试直流稳压电源DP832的CH2的伏安特性}{8}{subsubsection.2.1.4}%
+\contentsline {subsubsection}{\numberline {2.1.5}测试数控恒流源（DCS-01）的伏安特性}{9}{subsubsection.2.1.5}%
+\contentsline {subsubsection}{\numberline {2.1.6}电流控制电压源（CCVS）基本特性测试}{9}{subsubsection.2.1.6}%
+\contentsline {subsection}{\numberline {2.2}原始数据记录}{11}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}实验过程遇到问题及解决办法}{11}{subsection.2.3}%
+\contentsline {section}{\numberline {3}基本电路元件伏安特性的测量\hskip 1em\relax \heiti 分析与讨论}{12}{section.3}%
+\contentsline {subsection}{\numberline {3.1}实验数据分析}{12}{subsection.3.1}%
+\contentsline {subsubsection}{\numberline {3.1.1}对实验一数据进行线性拟合}{12}{subsubsection.3.1.1}%
+\contentsline {subsubsection}{\numberline {3.1.2}测试非线性电阻 12V 白炽灯的伏安特性}{14}{subsubsection.3.1.2}%
+\contentsline {subsubsection}{\numberline {3.1.3}测试直流稳压电源（DP831） CH2 的伏安特性}{15}{subsubsection.3.1.3}%
+\contentsline {subsubsection}{\numberline {3.1.4}数控恒流源}{15}{subsubsection.3.1.4}%
+\contentsline {subsubsection}{\numberline {3.1.5}电流控制电压源（CCVS）基本特性测试}{16}{subsubsection.3.1.5}%
+\contentsline {subsection}{\numberline {3.2}实验后思考题}{16}{subsection.3.2}%
+\contentsline {section}{\numberline {4}ETX 实验名称××× \hskip 1em\relax \heiti 结语}{17}{section.4}%
+\contentsline {subsection}{\numberline {4.1}实验心得和体会、意见建议等}{17}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}参考文献}{17}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}附件及实验相关的软硬件资料等}{17}{subsection.4.3}%
+\contentsfinish 

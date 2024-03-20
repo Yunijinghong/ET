@@ -1,0 +1,593 @@
+
+%!TEX program = xelatex
+\documentclass[dvipsnames, svgnames,a4paper,11pt]{article}
+\input{Settings} 
+\usepackage{lipsum}
+\usepackage{adjustbox}
+
+%\usepackage{mathrsfs} % 字体
+%\captionsetup[figure]{name=Figure} % 图片形式
+%\captionsetup[table]{name=Table} % 表格形式
+
+\begin{document}
+	
+	
+	
+	% 实验报告封面	
+	
+	% 顶栏
+	\begin{table}
+		\renewcommand\arraystretch{1.7}
+		\begin{tabularx}{\textwidth}{
+				|X|X|X|X
+				|X|X|X|X|}
+			\hline
+			\multicolumn{2}{|c|}{预习报告}&\multicolumn{2}{|c|}{实验记录}&\multicolumn{2}{|c|}{分析讨论}&\multicolumn{2}{|c|}{总成绩}\\
+			\hline
+			\LARGE25 & & \LARGE25 & & \LARGE30 & & \LARGE80 & \\
+			\hline
+		\end{tabularx}
+	\end{table}
+	% ---
+	
+	% 信息栏
+	\begin{table}
+		\renewcommand\arraystretch{1.7}
+		\begin{tabularx}{\textwidth}{|X|X|X|X|}
+			\hline
+			年级、专业： & 2022级 物理学 &组号： & 2\\
+			\hline
+			姓名： & 黄罗琳、王显 & 学号： & 22344001、22344002\\
+			\hline
+			实验时间： & 2024.3.6 & 教师签名： & \\
+			\hline
+		\end{tabularx}
+	\end{table}
+	% ---
+	
+	% 大标题
+	\begin{center}
+		\LARGE 实验二  \quad 基本电路元件伏安特性的测量
+	\end{center}
+	% ---
+	
+	% 注意事项
+	
+	% 基本
+	\textbf{【实验报告注意事项】}
+	\begin{enumerate}
+		\item 实验报告由三部分组成：
+		\begin{enumerate}
+			\item 预习报告：课前认真研读实验讲义，弄清实验原理；实验所需的仪器设备、用具及其使用、完成课前预习思考题；了解实验需要测量的物理量，并根据要求提前准备实验记录表格（可以参考实验报告模板，可以打印）。\textcolor{red}{\textbf{（20分）}}
+			\item 实验记录：认真、客观记录实验条件、实验过程中的现象以及数据。实验记录请用珠笔或者钢笔书写并签名（\textcolor{red}{\textbf{用铅笔记录的被认为无效}}）。\textcolor{red}{\textbf{保持原始记录，包括写错删除部分，如因误记需要修改记录，必须按规范修改。}}（不得输入电脑打印，但可扫描手记后打印扫描件）；离开前请实验教师检查记录并签名。\textcolor{red}{\textbf{（30分）}}
+			\item 数据处理及分析讨论：处理实验原始数据（学习仪器使用类型的实验除外），对数据的可靠性和合理性进行分析；按规范呈现数据和结果（图、表），包括数据、图表按顺序编号及其引用；分析物理现象（含回答实验思考题，写出问题思考过程，必要时按规范引用数据）；最后得出结论。\textcolor{red}{\textbf{（30分）}}
+		\end{enumerate}
+		\textbf{实验报告就是将预习报告、实验记录、和数据处理与分析合起来，加上本页封面。\textcolor{red}{（80分）}}
+		\item 实验报告在\textcolor{red}{\textbf{每个小结（补做）的之后一周内}}提交，最后一次实验，在\textcolor{red}{\textbf{结束一周内}}提交。
+		\item \textbf{注意事项}：
+		\begin{enumerate}
+			\item 请认真查看并理解实验讲义第一章内容；
+			\item 注意实验器材的合理使用；
+			\item 使用结束使用各种仪器之后需要将其放回原位。
+		\end{enumerate}
+	\end{enumerate}
+
+	% 目录
+	\clearpage
+	\tableofcontents
+	\clearpage
+	% ---
+	
+	
+	
+	% 预习报告	
+	
+	% 小标题
+	\setcounter{section}{0}
+	\section{基本电路元件伏安特性的测量 \quad\heiti 预习报告}
+	% ---
+	
+	% 实验目的
+	\subsection{实验目的}
+	\begin{enumerate}
+		\item 学习基本电路元件伏安特性的测试方法。
+		\item 进一步练习直流稳压电源、万用表的使用方法。
+		
+	\end{enumerate}
+	% ---
+	
+	% 仪器用具
+	\subsection{仪器用具}
+	\begin{table}[htbp]
+		\centering
+		\renewcommand\arraystretch{1.6}
+		% \setlength{\tabcolsep}{10mm}
+		\begin{tabular}{p{0.05\textwidth}|p{0.20\textwidth}|p{0.05\textwidth}|p{0.5\textwidth}}
+			\hline
+			编号& 仪器用具名称 & 数量 &  主要参数（型号，测量范围，测量精度等） \\
+			\hline
+			1& 电路原理箱 & 1 &  \\
+			
+				2& 直流稳压电源 & 1 &  \\
+			
+				3& 直流电流表 & 1 &  \\
+		
+				4& 直流电压表 & 1 &  \\
+			
+				5& 电流表专用线  & 1 &  \\
+		
+				6& 2号实验导线  & 1 &  \\
+			\hline
+		\end{tabular}
+	\end{table}
+	% ---
+	
+	% 原理概述
+	\subsection{原理概述}
+	\begin{enumerate}
+		\item 通过研究元件的伏安特性，可以得出元件的各种特性； 如果把电阻元件的电压取为横坐标（纵
+		坐标），电流取为纵坐标（横坐标），画出电压和电流的关系曲线，这条曲线称为该元件的伏安特性。
+		\item 与线性元件不同的是，非线性元件的伏安特性曲线不是一条通过原点的直线，不服从欧姆定律，有些非线性电阻元件的伏安特性还与电压或电流的方向有关。
+		\begin{figure}[htbp]
+			\centering
+			\includegraphics[width=0.6\textwidth]{非线性仪器.png}
+			\caption{非线性电阻元件的伏安特性}
+		%	\label{fig:name}
+		\end{figure}
+		\item 常见非线性电阻元件有：电流控制型电阻、电压控制型电阻、既是电流控制型又是电压控制型电阻
+		\item 电源可以分为独立源和受控源两种。受控源可以分为四种：压控电压源、流控电压源、压控电流源、流控电流源。受控源的基本特性有输入特性、输出特性和转移特性。 
+		\item 输入特性是指控制端电压与电流之间的关系； 输出特性是指控制量为某一常数时，输出端电压与电流之间的关系； 转移特性是指输出量与控制量之间的关系。
+		\item 四种理想受控源的转移特性表示如下：\\
+		1）VCVS：$\mu$＝u1/u2，称之为转移电压比；\\
+		2）CCVS：$\gamma$＝u2/i1，称之为转移电阻；\\
+		3）VCCS: $\mathrm{g}$＝i2/u1，称之为转移电导；\\
+		4）CCCS：$\beta$＝i2/i1，称之为转移电流比。
+		
+	\end{enumerate}
+	% ---
+	
+	
+	
+	% 实验前思考题
+	\subsection{实验预习题}
+	
+	% 思考题1
+	\begin{question}
+		预习了解电路基本元件及其伏安特性。\\原理概述部分
+	\end{question}
+	
+	% 思考题2
+	\begin{question}
+		考虑发热对电阻伏安特性的影响；\\
+		电阻发热会导致电阻的分子无规则热运动加剧，对电子运动的阻抗增加，阻值会升高。
+	\end{question}
+	
+	% 思考题3
+	\begin{question}
+		万用表电压档与电流档的内阻范围以及内阻对测量的影响；\\
+		在电压档，内阻的分流会降低电压。所以内阻越高，分流越小，测量误差越小；\\
+		在电流档，内阻的压降会使实际电流减小。所以内阻越小，压降越小，测量误差越小。
+	\end{question}
+	\begin{question}
+		受控源和独立源相比有何异同点？比较两种受控源的代号、控制量与被控制量的关系如何？\\
+		独立源的输出电流或电压保持恒定不变，受控源的输出电流或电压可通过改变控制端来改变。\\
+		CCVS，控制量为输入电流，被控制量为输出电压；\\
+		 VCCS，控制量为输入电压，被控制量为输出电流。
+		 \end{question}
+		 \begin{figure}[htbp]
+		 	\centering
+		 	\includegraphics[width=0.5\textwidth]{四种.png}
+		 	\caption{四种受控源}
+		 %	\label{fig:name}
+		 \end{figure}
+	
+	\begin{question}
+		两种受控源中的ｇ、$\gamma$的意义是什么？如何测得？\\
+		g为流控电压源的转移电阻，是输出电流与输入电压之比。\\
+		$\gamma$为压控电流源的转移电导，是输出电流与输入电压之比。
+	\end{question}
+	\begin{question}
+		受控源输入输出是否符合能量守恒，其中的能量转移是怎么进行的？\\
+		受控源输入输出符合能量守恒；受控源的输出能量来自于电路的其他部分或外部提供，而不是受控源本身。
+	\end{question}
+	% 实验记录	
+	\clearpage
+	
+	% 顶栏
+	\begin{table}
+		\renewcommand\arraystretch{1.7}
+		\centering
+		\begin{tabularx}{\textwidth}{|X|X|X|X|}
+			\hline
+			专业： & 物理学 & 年级： & 2022级 \\
+			\hline
+			姓名： & 黄罗琳、王显 & 学号： & 22344001、22344002\\
+			\hline
+			室温： &  23℃& 实验地点： & A522 \\
+			\hline
+			学生签名：& 见\textbf{附件}部分 & 评分： &\\
+			\hline
+			实验时间：& 2024/3/6 & 教师签名：&\\
+			\hline
+		\end{tabularx}
+	\end{table}
+	% ---
+	
+	% 小标题
+	\section{基本电路元件伏安特性的测量 \quad\heiti 实验记录}
+	% ---
+	
+	% 实验过程记录
+	\subsection{实验内容、步骤与结果}
+	
+	
+	\subsubsection{操作步骤记录}
+	\begin{enumerate}
+		\item 
+	\end{enumerate}	
+	
+	
+
+	%
+	\subsubsection{测试线性电阻元件的伏安特性}
+%	\begin{enumerate}
+	操作步骤记录：\\
+	\begin{enumerate}
+		\item 首先构建进行电流表内接的实验电路，待测原件选为120$\omega$和51$\omega$的电阻。
+		\item 为防止电阻两端的功率不超过1w，设定在120$\omega$实验中的电压不超过6V，51$\omega$实验中电压不超过8V。
+		\item 测量过程均采用0.5V步长进行测量，通过调整电源电压进行注意测量并记录数据。
+		\item 完成电流表内接实验后，改变实验电路，进行电流表外接的电路进行实验
+	\end{enumerate}	
+		\begin{figure}[htb]
+	\centering
+		\includegraphics[width=0.2\textwidth]{内接法.png}
+		\caption{内接法电路图}
+		  
+		\label{内接法电路图}
+	 \end{figure}
+	 \begin{figure}[htbp]
+	 	\centering
+	 	\includegraphics[width=0.3\textwidth]{内接法数据.png}
+	 	\caption{内接法实验数据}
+	 	\label{内接法实验数据}
+	 \end{figure}
+	 
+	 
+	 	\begin{figure}[htbp]
+	 	\centering
+	 	\includegraphics[width=0.2\textwidth]{外接法.png}
+	 	\caption{外接法电路图}
+	 	\label{外接法电路图}
+	 \end{figure}
+	 \begin{figure}[htbp]
+	 	\centering
+	 	\includegraphics[width=0.3\textwidth]{外接法数据.png}
+	 	\caption{外接法实验数据}
+	 	\label{外接法实验数据}
+	 \end{figure}
+	 
+	 
+		\subsubsection{测试非线性电阻12V白炽灯的伏安特性}
+	%	\begin{enumerate}
+			\begin{figure}[H]
+				\centering
+				\includegraphics[width=0.2\textwidth]{外接法.png}
+				\caption{测量电路图}
+				\label{白炽灯测量电路图}
+			\end{figure}
+			
+			\begin{figure}[H]
+				\centering
+				\includegraphics[width=0.3\textwidth]{小灯泡实验数据.png}
+				\caption{白炽灯测量实验数据}
+				\label{白炽灯测量实验数据}
+			\end{figure}
+	%	\end{enumerate}
+		
+			\subsubsection{测试直流稳压电源DP832的CH2的伏安特性}
+		%	\begin{enumerate}
+				\begin{figure}[H]
+				\centering
+				\includegraphics[width=0.3\textwidth]{内接法数据.png}
+				\caption{内接法实验数据}
+				\label{内接法实验数据}
+						\end{figure}
+			\begin{figure}[H]
+				\centering
+				\includegraphics[width=0.2\textwidth]{CH2实验数据.png}
+				\caption{CH2实验数据}
+				\label{CH2实验数据}
+			\end{figure}
+		
+				\subsubsection{测试数控恒流源（DCS-01）的伏安特性}
+			%	\begin{enumerate}
+				\begin{figure}[H]
+					\centering
+					\includegraphics[width=0.2\textwidth]{内接法.png}
+					\caption{内接法电路图}
+					\label{内接法电路图}
+				\end{figure}
+				\begin{figure}[H]
+					\centering
+					\includegraphics[width=0.3\textwidth]{dcs实验数据.png}
+					\caption{数控恒流源（DCS-01）的伏安特性实验数据}
+					\label{dcs实验数据}
+				\end{figure}
+					\subsubsection{电流控制电压源（CCVS）基本特性测试}
+				\begin{enumerate}
+					
+					\item 输出特性\\
+					使CCVS控制电流I1=100μA 
+				\begin{table}[htbp]
+					\centering
+					\begin{tabular}{|l|l|l|}
+						\hline
+						r/$\Omega $ & u输出/v & i输出/ma  \\ \hline
+						1k & 6.085 & 6.085  \\ \hline
+						3k & 6.136 & 2.028  \\ \hline
+						5k & 6.162 & 1.232  \\ \hline
+					\end{tabular}
+				\end{table}
+				\item 转移特性及输入特性\\
+				使CCVS负载$RL=2K\Omega $，改变控制量I1大小
+				\begin{table}[htbp]
+					\centering
+					\begin{tabular}{|l|l|l|l|}
+						\hline
+						实际 & i输入/ma & u1/v & u2/v  \\ \hline
+						0.129 & 0.1 & 0.787 & 6.448  \\ \hline
+						0.241 & 0.2 & 2.442 & 8.984  \\ \hline
+						0.349 & 0.3 & 8.094 & 9.019  \\ \hline
+						0.276 & 0.25 & 3.917 & 8.915  \\ \hline
+						0.202 & 0.15 & 1.76 & 8.857  \\ \hline
+						0.168 & 0.13 & 1.194 & 8.09  \\ \hline
+						0.093 & 0.05 & 0.414 & 4.665  \\ \hline
+					\end{tabular}
+				\end{table}
+			
+         	\end{enumerate}
+	
+	% ---
+	
+	% 原始数据
+	\clearpage
+	\subsection{原始数据记录}
+	实验记录本上的原始数据见%\cref{}（签字）。
+	
+	实验台桌面整理见%\textbf{附件}部分(\cref{})。
+	
+	其它原始数据见%\cref{}。
+	% ---
+	
+	% 问题记录
+	\subsection{实验过程遇到问题及解决办法}
+	\begin{enumerate}
+		\item 第一个实验中出现了与理论计算不相符的情况（两种方法一测量值偏大，一测量值偏小）而经过初步计算认定两值均偏小，虽然相对大小正确，经分析，可能由于当时天气为回南天，湿度较大，导致电路连接出现因潮湿而出现传输问题，可能会导致数据出现误差。
+		\item 第二个实验中起初由于电压较小，灯泡亮度较低，无法确认是否连接正常，可以选择从高电压进行测量，这样可以确认电路安全，也可以保证电路连接正确。
+		\item 第三个实验中，由于恒压源电阻接近于零故建立如  电路。
+		\item 第五个实验中，电路连接有很多难点，经过与老师讨论和同学互助，正确连接了电路，并帮助多位同学完成了电路连接，其中电路板12V供电起初并没有打开，出现了一组错误数据，其在数据记录原始版中有体现，在更正数据之后，得到了初步符合理论计算的数据。
+		\item 实验中很多连接需要充分利用各种借口的连接线，此外由于手持式万用表很容易损坏，出现了要更换保险丝的问题。
+	\end{enumerate}
+	% ---
+	
+	
+	
+	% 分析与讨论	
+	\clearpage
+	
+	% 顶栏
+	\begin{table}
+		\renewcommand\arraystretch{1.7}
+		\begin{tabularx}{\textwidth}{|X|X|X|X|}
+			\hline
+			专业：& 物理学 &年级：& 2022级\\
+			\hline
+			姓名： & 黄罗琳、王显 & 学号：& 22344001、22344002\\
+			\hline
+			日期：& 2024/3/6 & 评分： &\\
+			\hline
+		\end{tabularx}
+	\end{table}
+	% ---
+	
+	% 小标题
+	\section{基本电路元件伏安特性的测量\quad\heiti 分析与讨论}
+	% ---
+	
+	% 数据处理
+	\subsection{实验数据分析}
+	
+	%
+	\subsubsection{对实验一数据进行线性拟合}
+	\begin{enumerate}
+		\item 电压表内接法数据拟合
+			\begin{figure}[H]
+			\centering
+			\includegraphics[width=0.4\textwidth]{内接法图片.png}
+			\caption{电压表内接51Ω拟合}
+			\label{电压表内接51Ω拟合}
+		\end{figure}
+		
+			\begin{figure}[H]
+			\centering
+			\includegraphics[width=0.4\textwidth]{内接法图片120.png}
+			\caption{电压表内接120Ω拟合}
+			\label{电压表内接120Ω拟合}
+		\end{figure}
+		\clearpage
+			\item 电压表外接法数据拟合
+				\begin{figure}[H]
+				\centering
+				\includegraphics[width=0.4\textwidth]{外接法51.png}
+				\caption{电压表外接51Ω拟合}
+				\label{电压表外接51Ω拟合}
+			\end{figure}
+			
+			\begin{figure}[H]
+				\centering
+				\includegraphics[width=0.4\textwidth]{外接法120.png}
+				\caption{电压表外接120Ω拟合}
+				\label{电压表外接120Ω拟合}
+			\end{figure}
+				\item 数据对比
+					\begin{figure}[H]
+					\centering
+					\includegraphics[width=0.4\textwidth]{51数据对比.png}
+					\caption{51Ω两种方法数据对比}
+					\label{51Ω两种方法数据对比}
+				\end{figure}
+				
+				\begin{figure}[H]
+					\centering
+					\includegraphics[width=0.4\textwidth]{120数据对比.png}
+					\caption{120Ω两种方法数据对比}
+					\label{120Ω两种方法数据对比}
+				\end{figure}
+				\item 数据分析\\
+				     内接法结果：$\text{R1=50.52±0. 007}\Omega $
+				     \hspace{0.4cm}相对误差：$\text{r1=-0.009}$
+				     \hspace{0.4cm}$\text{R2=118.18±0. 02}\Omega$
+				     \hspace{0.4cm} 相对误差：$\text{r2=-0.015}$\\
+				     外接法结果：$\text{R1=51.47±0. 009}\Omega $
+				     \hspace{0.4cm} 相对误差：$\text{r1=0.009}$
+				     \hspace{0.4cm}  $\text{R2=119.43±0. 02}\Omega $
+				     \hspace{0.4cm}相对误差：$\text{r2=-0.00475}$
+				 \\数据对比和理论分析可知，测量小电阻时外接法误差更小，测量大电阻时内接法误差更小，之后所有实验电路设计的选择均采用此项原则，例如对于恒压源内阻无限小的情况，采用电压表内接（防止电流表内阻影响测量）
+				 \\误差来源分析，正如前文所说，当时空气湿度较大，故对于120$\omega$的电阻伏安特性的测量与实际不相符，但是相对大小不变，故可认定实验数据准确，仅存在系统误差。
+				     
+				
+				
+			
+		
+		
+	\end{enumerate}
+	
+	%
+	\subsubsection{测试非线性电阻 12V 白炽灯的伏安特性}
+	\begin{enumerate}
+		\item 将实验数据进行绘图。
+			\begin{figure}[H]
+			\centering
+			\includegraphics[width=0.4\textwidth]{白炽灯图片.png}
+			\caption{白炽灯伏安特性曲线}
+			\label{白炽灯伏安特性曲线}
+		\end{figure}
+		\item 图片数据分析\\
+		由图可知，白炽灯（非线性电阻）的伏安特性曲线不是一条直线,电阻值随电压或电流的变化而变化。\\
+		根据曲线趋势可知，白炽灯的阻值随着电压和电流的增大逐渐升高，其物理意义为：电压电流升高导致灯丝的温度升高，从而加剧了分子的不规则运动，从而影响了金属的导电能力，故会导致阻值升高。
+		
+	\end{enumerate}
+	
+	%
+	\subsubsection{测试直流稳压电源（DP831） CH2 的伏安特性}
+	\begin{enumerate}
+		\item 将实验数据进行绘图。
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=0.4\textwidth]{CH2数据图片.png}
+			\caption{直流稳压电源（DP831） CH2 的伏安特性曲线}
+			\label{CH2数据图片}
+		\end{figure}
+		\item 图片数据分析\\
+		由图可知，伏安特性曲线不是一条直线,电阻值随电压或电流的变化而变化，这是由于恒压源并非理想电源，存在内阻，故输出电压会产生变化，线性拟合后，斜率的绝对值即为电源内阻。\\
+		$r_\text{内}=3.23858\times10^{-4}\Omega.$
+		
+	\end{enumerate}
+		\subsubsection{数控恒流源}
+	\begin{enumerate}
+		\item 将实验数据进行绘图。
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=0.4\textwidth]{数控恒流源.png}
+			\caption{数控恒流源的伏安特性曲线}
+			\label{数控恒流源}
+		\end{figure}
+		\item 图片数据分析\\
+		由图可知，伏安特性曲线近似为一条直线，可以说明恒流源的输出电流恒定，值得一提的是，测量数据发现电流存在极小范围的周期波动，分析其来源可能是由于导线头的不稳定，需要进行手动连接，这可能导致手部颤抖等问题出现接触问题，会导致数据出现波动，但在总体上电流数据恒定，故认定实验成功。
+	
+	\end{enumerate}
+		\subsubsection{电流控制电压源（CCVS）基本特性测试}
+	\begin{enumerate}
+			\begin{figure}[H]
+			\centering
+			\includegraphics[width=0.3\textwidth]{接线总览.jpg}
+			\caption{实验接线总览}
+			\label{接线总览}
+		\end{figure}
+		\item 输出特性
+		
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=0.4\textwidth]{输出特性.png}
+			\caption{电流控制电压源（CCVS）输出特性}
+			\label{输出特性}
+		\end{figure}
+		图片数据分析：由图可知，电流控制电压源，尽管输出电流发生了变化，但是输出电压依旧不变。
+		\item 
+		
+	
+	\end{enumerate}
+
+	% 实验后思考题
+	\subsection{实验后思考题}
+	
+	%思考题1
+	\begin{question}
+		
+	\end{question}
+	
+	% 思考题2
+	\begin{question}
+		
+	\end{question}
+	
+	% 思考题3
+	\begin{question}
+		
+	\end{question}
+	
+	% ---
+	
+	
+	% 结语部分
+	\clearpage
+	
+	% 小标题
+	\section{ETX 实验名称××× \quad\heiti 结语}
+	% ---
+	
+	% 总结、杂谈与致谢
+	\subsection{实验心得和体会、意见建议等}
+	\begin{enumerate}
+		\item 
+	\end{enumerate}
+	% ---
+	
+	% 参考文献
+	\subsection{参考文献}
+	[1] 维基百科 https://zh.wikipedia.org
+	
+	[2] 沈韩.基础物理实验.——北京：科学出版社，2015.2 ISBN：978-7-03-043311-4
+	
+	% ---
+	
+	% 附件
+	\subsection{附件及实验相关的软硬件资料等}
+	试验台桌面整理如%\cref{}所示。
+	
+	实验报告个人签名如\cref{fig:name}。
+	
+	\begin{figure}[htbp]
+		\centering
+		\includegraphics[width=0.7\textwidth]{name.png}
+		\caption{个人签名}
+		\label{fig:name}
+	\end{figure}
+	
+	% ---
+	
+	相关代码已上传至Github。
+	
+	
+	
+\end{document}
