@@ -3,6 +3,8 @@
 \input{Settings} 
 \usepackage{lipsum}
 \usepackage{adjustbox}
+\usepackage{indentfirst}
+\setlength{\parindent}{2em}
 %\usepackage{mathrsfs} % 字体
 %\captionsetup[figure]{name=Figure} % 图片形式
 %\captionsetup[table]{name=Table} % 表格形式
@@ -41,7 +43,7 @@
 	
 	% 大标题
 	\begin{center}
-		\LARGE 实验序号 \quad 实验名称
+		\LARGE ET5 \quad 一阶电路暂态过程的研究
 	\end{center}
 	% ---
 	
@@ -123,14 +125,29 @@
 	
 	% 原理概述
 	\subsection{原理概述}
+	
 	\begin{enumerate}
-		\item \textbf{动态电路及响应}：含有L、C元件的电路称为动态电路，其描述方程为微分方程。线性电路的响应可分为零状态响应、零输入响应及全响应，分别由初始条件和激励引起。
-
-		\item \textbf{一阶电路}：电路中只含有一个电感或电容元件时称为一阶电路。一阶电路的零输入响应按指数规律衰减，零状态响应按指数规律递增或递减，速率由电路参数确定的时间常数τ决定。
+		\item \textbf{动态电路及响应}：含有 \( L \)、 \( C \) 元件的电路称为动态电路，其描述方程为微分方程。线性电路的响应可分为零状态响应、零输入响应及全响应，初始状态为零，仅激励引起的响应叫零状态响应；激励为零，由初始条件引起的响应叫零输入响应；同时同激励和初始条件引起的响应叫全响应。
 		
-		\item \textbf{过渡过程}：动态电路的过渡过程是短暂的单次变化过程，难以直接观察。常用方法是用方波仪记录过程，根据电路时间常数τ的大小采用不同的实验方法。
+		\item \textbf{一阶电路分析}：电路中只含有一个电感或电容元件时称为一阶电路。一阶电路的零输入响应总是按指数规律衰减，零状态响应总是按指数规律递增或递减，衰减和递增速率的快慢，决定于时间常数 $\tau$ 。
+		在 RC 电路中，$\tau=RC$；在 RL 电路中， $\tau=\frac LR$。
 		
-		\item \textbf{微分电路和积分电路}：微分电路和积分电路是脉冲数字电路中常见的波形变换电路。当电路时间常数τ远小于或远大于方波脉冲宽度Tp时，微分电路可将方波变换成尖脉冲，积分电路可将方波变换成三角波。
+		\item \textbf{过渡过程}：动态电路的过渡过程是短暂的单次变化过程，难以直接观察，所以使用的实验方法即是本实验所使用的：
+		 \begin{enumerate}
+			\item 使用方波信号作为输入激励。
+			\item 用示波器观察电路的输出响应。
+			\item 根据电路的时间常数 \( \tau \)，调整方波信号的频率和幅度，以便在示波器上观察到清晰的过渡过程。
+		\end{enumerate}
+		
+		\item \textbf{微分电路和积分电路}：微分电路和积分电路是脉冲数字电路中常见的波形变换电路。当电路时间常数 \( \tau \) 远小于或远大于方波脉冲宽度 \( T_p \) 时，微分电路可将方波变换成尖脉冲，积分电路可将方波变换成三角波。电容和电感的数学表达式如下：
+		
+		\begin{itemize}
+			\item 电容： \( i= C \frac{du}{dt} \)， \( u = \frac{1}{C} \int i dt + \text{constant} \)
+			\item 电感： \( u = L \frac{di}{dt} \)， \( i = \frac{1}{L} \int u dt + \text{constant} \)
+		\end{itemize}
+		
+		
+		
 	\end{enumerate}
 	% ---
 	% ---
@@ -184,68 +201,109 @@
 			\hline
 			专业： & 物理学 & 年级： & 2022级 \\
 			\hline
-			姓名： &  & 学号： & \\
+			姓名： & 黄罗琳 、王显& 学号： &22344001、22344002 \\
 			\hline
-			室温： &  & 实验地点： & A522 \\
+			室温： & 25℃ & 实验地点： & A522 \\
 			\hline
-			学生签名：& 见\textbf{附件}部分 & 评分： &\\
+			学生签名：&  & 评分： &\\
 			\hline
-			实验时间：& 2024// & 教师签名：&\\
+			实验时间：& 2024/3/27 & 教师签名：&\\
 			\hline
 		\end{tabularx}
 	\end{table}
 	% ---
 	
 	% 小标题
-	\section{ETX 实验名称×××  \quad\heiti 实验记录}
+	\section{一阶电路暂态过程的研究\quad\heiti 实验记录}
 	% ---
 	
 	% 实验过程记录
 	\subsection{实验内容、步骤与结果}
 	
 	%
-	\subsubsection{操作步骤记录}
-	\begin{enumerate}
-		\item 
-	\end{enumerate}	
-	
+	\subsubsection{实验步骤}
+\begin{enumerate}
+	 \item  RC微分电路如图2所示，调节方波仪输出频率，使方波脉冲宽度满足微分电路的必要条件，将R2、R4分别接入，观察微分电路输出有何不同，并记录相关数据和波形图像。
+	 \item RL 微分电路如图3所示，调节方波仪输出频率，使方波脉冲宽度满足微分电路的必要条件，将 R1、 R3分别
+	 接入，观察微分电路输出有何不同，并记录相关数据和波形图像。
+	 \item RC 积分电路如图4所示，在方波脉冲宽度满足积分电路必要条件下将 R1、 R3 分别接入，观察积分电路输出
+	 有何不同， 并记录相关数据和波形图像。
+	 \item RL 积分电路如图5所示，在方波脉冲宽度满足积分电路必要条件下，将 R2、 R4 分别接入，观察积分电路输
+	 出有何不同， 并记录相关数据和波形图像。
+	\end{enumerate}
+	 \begin{figure}[H]
+		\begin{minipage}[b]{0.5\linewidth}
+		  \centering
+		  \includegraphics[width=\linewidth]{RC微分电路.png}
+		  \caption{RC微分电路（尖脉冲）}
+		\end{minipage}
+		\hfill
+		\begin{minipage}[b]{0.5\linewidth}
+		  \centering
+		  \includegraphics[width=\linewidth]{RL微分电路.png}
+		  \caption{RL微分电路（尖脉冲）}
+		\end{minipage}
+	 \end{figure}
+	 \begin{figure}[H]
+		\begin{minipage}[b]{0.5\linewidth}
+		  \centering
+		  \includegraphics[width=\linewidth]{RC积分电路.png}
+		  \caption{RC积分电路}
+		\end{minipage}
+		\hfill
+		\begin{minipage}[b]{0.5\linewidth}
+		  \centering
+		  \includegraphics[width=\linewidth]{RL积分电路.png}
+		  \caption{RL积分电路（三角波）}
+		\end{minipage}
+	 \end{figure}
+	 
+
 	%
-	\subsubsection{}
+	\subsubsection{实验结果}
 	\begin{enumerate}
-		\item \begin{table}[h]
-			\centering
-			\caption{表格示例}
-			\label{tab:tab1}
-			\begin{tabular}{|c|c|c|c|c|c|}
-				\hline
-				组1/序号i & 1 & 2 & 3 & 4 & 5 \\
-				$v_{1i}(m/s)$ & 1.26 & 1.08 & 1.00 & 0.75 & 0.38 \\
-				$f_{1i}(Hz)$ & 40073 & 40127 & 40105 & 40088 & 40066 \\
-				\hline
-				组2/序号i & 1 & 2 & 3 & 4 & 5 \\
-				$v_{2i}(m/s)$ & 1.21 & 1.06 & 0.99 & 0.52 & 0.57 \\
-				$f_{2i}(Hz)$ & 40143 & 40125 & 40084 & 40080 & 40067 \\
-				\hline
-				组3/序号i & 1 & 2 & 3 & 4 & 5 \\
-				$v_{3i}(m/s)$ & 1.15 & 0.98 & 0.78 & 0.59 & 0.36 \\
-				$f_{3i}(Hz)$ & 40135 & 40115 & 40092 & 40070 & 40044 \\
-				\hline
-			\end{tabular}
-		\end{table}		
+\item RC微分电路
+\begin{figure}[{H}]
+	\centering
+	\includegraphics[width=0.35\linewidth]{RC微分5.1.jpg}
+	\caption{RC微分电路5.1KΩ示波器图像}
+	\label{}
+\end{figure}
+实验所设参数为$R_2=5.1\text{k}\Omega\text{,}C_1=0.1\mu\text{F},f=300H\text{z}$\\
+\indent 通过光标测得实验数据，此时实验波形图像为尖脉冲，实验参数和结果可以通过图6得知。
+
+\begin{figure}[{H}]
+	\centering
+	\includegraphics[width=0.35\linewidth]{RC微分2.4.jpg}
+	\caption{RC微分电路2.4KΩ示波器图像}
+	\label{}
+\end{figure}
+实验所设参数为$R_4=2.4\text{k}\Omega\text{,}C_1=0.1\mu\text{F},f=300H\text{z}$\\
+\indent 通过光标测得实验数据，此时实验波形图像为尖脉冲，实验参数和结果可以通过图7得知。
+\item RL微分电路
+\begin{figure}[{H}]
+	\centering
+	\includegraphics[width=0.35\linewidth]{RL微分电路3.0.jpg}
+	\caption{RL微分电路3.0KΩ示波器图像}
+	\label{}
+\end{figure}
+实验所设参数为$R_1=3.0\text{k}\Omega\text{,}C_1=0.1\text{H},f=100H\text{z}$\\
+\indent 通过光标测得实验数据，此时实验波形图像为尖脉冲，实验参数和结果可以通过图8得知。
+
+\begin{figure}[{H}]
+	\centering
+	\includegraphics[width=0.35\linewidth]{RL微分5.1.jpg}
+	\caption{RL微分电路5.1KΩ示波器图像}
+	\label{}
+\end{figure}
+实验所设参数为$R_3=5.1\text{k}\Omega\text{,}C_1=0.1\text{H},f=100H\text{z}$\\
+\indent 通过光标测得实验数据，此时实验波形图像为尖脉冲，实验参数和结果可以通过图9得知。
+\item RC积分电路
 	\end{enumerate}
 	
 	% ---
 	
-	% 原始数据
-	\clearpage
-	\subsection{原始数据记录}
-	实验记录本上的原始数据见%\cref{}（签字）。
-	
-	实验台桌面整理见%\textbf{附件}部分(\cref{})。
-	
-	其它原始数据见%\cref{}。
-	% ---
-	
+
 	% 问题记录
 	\subsection{实验过程遇到问题及解决办法}
 	\begin{enumerate}
@@ -265,33 +323,52 @@
 			\hline
 			专业：& 物理学 &年级：& 2022级\\
 			\hline
-			姓名： &  & 学号：& \\
+			姓名： & 黄罗琳、王显 & 学号：& 22344001、22344002\\
 			\hline
-			日期：&  & 评分： &\\
+			日期：& 2024/3/27 & 评分： &\\
 			\hline
 		\end{tabularx}
 	\end{table}
 	% ---
 	
 	% 小标题
-	\section{ETX 实验名称××× \quad\heiti 分析与讨论}
+	\section { 一阶电路暂态过程的研究 \quad \heiti 分析与讨论}
 	% ---
 	
 	% 数据处理
-	\subsection{实验数据分析}
+	\subsection{实验数据分析与讨论}
 	
 	%
-	\subsubsection{}
-	\begin{enumerate}
-		\item 
-	\end{enumerate}
+	\subsubsection{RC微分电路}
+	时间常数$\tau=RC$
+	\begin{table}[H]
+		\centering
+		\begin{tabular}{|l|l|l|}
+		\hline
+			~ & R2=5.1KΩ & R4=2.4KΩ \\ \hline
+			理论值 & 510$\mu$s & 240$\mu$s \\ \hline
+			测量值 & 508$\mu$s & 250$\mu$s \\ \hline
+			相对误差 & -0.39\% & +4.16 \% \\ \hline
+		\end{tabular}
+	\end{table}
+	根据实验数据可知，由于R2的电阻比R4大，故可以时间常数更大一些，符合实验结果，并且实验数据的相对误差较小，无明显问题。\\
+	\indent 但是明显看出相对误差出现了变化，这是由于示波器的光标在调整时并不能连续调整，而是以0.2$\mu$s的步长进行调整，如果选用对电压进行调整，则是以0.04V的步长进行调整，这些均会导致实验出现误差，不过均在误差允许范围之内，实验成功。
 	
 	%
-	\subsubsection{}
-	\begin{enumerate}
-		\item 
-	\end{enumerate}
-	
+	\subsubsection{RL微分电路}
+	时间常数$\tau=\frac LR$
+	\begin{table}[H]
+		\centering
+		\begin{tabular}{|l|l|l|}
+		\hline
+			~ & R1=3.0KΩ & R3=5.1KΩ \\ \hline
+			理论值 & 33.3$\mu$s & 19.6$\mu$s \\ \hline
+			测量值 & 32.6$\mu$s & 20.2$\mu$s \\ \hline
+			相对误差 & -2.10\% & +3.06\% \\ \hline
+		\end{tabular}
+	\end{table}
+	根据实验数据可知，由于R3的电阻比R1大，所以时间常数更小，符合公式。
+	此外实验存在一定的误差，可能来源与RC微分电路实验中误差来源相同，不过均在误差允许范围之内，实验较为成功。
 	%
 	\subsubsection{}
 	
