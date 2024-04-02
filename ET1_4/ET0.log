@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.9.16)  25 MAR 2024 04:23
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.9.16)  2 APR 2024 14:10
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -902,6 +902,42 @@ LaTeX Warning: Label `' multiply defined.
 
 LaTeX Warning: Label `@cref' multiply defined.
 
+
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `@cref' multiply defined.
+
+
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `@cref' multiply defined.
+
+
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `@cref' multiply defined.
+
+
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `@cref' multiply defined.
+
+
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `@cref' multiply defined.
+
+
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `@cref' multiply defined.
+
 )
 \openout1 = `ET0.aux'.
 
@@ -1132,11 +1168,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \hskip 10.95pt
-(hyperref)                replaced by space on input line 82.
+(hyperref)                replaced by space on input line 77.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\heiti' on input line 82.
+(hyperref)                removing `\heiti' on input line 77.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1162,11 +1198,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \hskip 10.95pt
-(hyperref)                replaced by space on input line 182.
+(hyperref)                replaced by space on input line 177.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\heiti' on input line 182.
+(hyperref)                removing `\heiti' on input line 177.
 
 File: ./images//开路电压.png Graphic file (type bmp)
 <./images//开路电压.png>
@@ -1182,6 +1218,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [5
 
 ]
+File: ./images//伏安法电路图.png Graphic file (type bmp)
+<./images//伏安法电路图.png>
+File: ./images//半流法.png Graphic file (type bmp)
+<./images//半流法.png>
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -1190,24 +1231,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [6]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[7
-
-]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                \hskip 10.95pt
-(hyperref)                replaced by space on input line 268.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\heiti' on input line 268.
+File: ./images//半压法.png Graphic file (type bmp)
+<./images//半压法.png>
+File: ./images//戴维南定理.png Graphic file (type bmp)
+<./images//戴维南定理.png>
+File: ./images//诺顿定理.png Graphic file (type bmp)
+<./images//诺顿定理.png>
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1216,18 +1245,18 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[8
-
-]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                \hskip 10.95pt
-(hyperref)                replaced by space on input line 316.
+[7]
+File: ./images//半压法.png Graphic file (type bmp)
+<./images//半压法.png>
 
 
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\heiti' on input line 316.
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
+[8]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -1237,6 +1266,44 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [9
 
+]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \hskip 10.95pt
+(hyperref)                replaced by space on input line 354.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\heiti' on input line 354.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[10
+
+]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \hskip 10.95pt
+(hyperref)                replaced by space on input line 402.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\heiti' on input line 402.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[11
+
 ] (./ET0.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -1245,15 +1312,15 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `ET0.out' has not changed.
-(rerunfilecheck)             Checksum: 07AAE40A9364A437760C3E79FB07DC7D;2337.
+(rerunfilecheck)             Checksum: 1FA2A07A67633B155F2E2062BA1F3858;2953.
  ) 
 Here is how much of TeX's memory you used:
- 38064 strings out of 476683
- 822755 string characters out of 5807575
- 1879012 words of memory out of 5000000
- 57680 multiletter control sequences out of 15000+600000
+ 38121 strings out of 476683
+ 823877 string characters out of 5807575
+ 1876012 words of memory out of 5000000
+ 57732 multiletter control sequences out of 15000+600000
  519217 words of font info for 88 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  105i,12n,107p,427b,966s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on ET0.pdf (9 pages).
+Output written on ET0.pdf (11 pages).

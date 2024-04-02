@@ -269,7 +269,7 @@
 	\caption{RC微分电路5.1KΩ示波器图像}
 	\label{}
 \end{figure}
-实验所设参数为$R_2=5.1\text{k}\Omega\text{,}C_1=0.1\mu\text{F},f=300H\text{z}$\\
+实验所设参数为$R_2=5.1\text{k}\Omega\text{,}\quad C_2=0.1\mu\text{F}, \quad f=300H\text{z}$\\
 \indent 通过光标测得实验数据，此时实验波形图像为尖脉冲，实验参数和结果可以通过图6得知。
 
 \begin{figure}[{H}]
@@ -278,7 +278,7 @@
 	\caption{RC微分电路2.4KΩ示波器图像}
 	\label{}
 \end{figure}
-实验所设参数为$R_4=2.4\text{k}\Omega\text{,}C_1=0.1\mu\text{F},f=300H\text{z}$\\
+实验所设参数为$R_4=2.4\text{k}\Omega\text{,}\quad C_2=0.1\mu\text{F},\quad f=300H\text{z}$\\
 \indent 通过光标测得实验数据，此时实验波形图像为尖脉冲，实验参数和结果可以通过图7得知。
 \item RL微分电路
 \begin{figure}[{H}]
@@ -287,7 +287,7 @@
 	\caption{RL微分电路3.0KΩ示波器图像}
 	\label{}
 \end{figure}
-实验所设参数为$R_1=3.0\text{k}\Omega\text{,}C_1=0.1\text{H},f=100H\text{z}$\\
+实验所设参数为$R_1=3.0\text{k}\Omega\text{,}\quad L_1=0.1\text{H},\quad f=100H\text{z}$\\
 \indent 通过光标测得实验数据，此时实验波形图像为尖脉冲，实验参数和结果可以通过图8得知。
 
 \begin{figure}[{H}]
@@ -296,9 +296,44 @@
 	\caption{RL微分电路5.1KΩ示波器图像}
 	\label{}
 \end{figure}
-实验所设参数为$R_3=5.1\text{k}\Omega\text{,}C_1=0.1\text{H},f=100H\text{z}$\\
+实验所设参数为$R_3=5.1\text{k}\Omega\text{,}\quad L_1=0.1\text{H},\quad f=100H\text{z}$\\
 \indent 通过光标测得实验数据，此时实验波形图像为尖脉冲，实验参数和结果可以通过图9得知。
 \item RC积分电路
+ 所得实验图像均为三角波。
+\begin{figure}[{H}]
+	\centering
+	\includegraphics[width=0.3\linewidth]{RC积分电路3-100.jpg}
+	\caption{RC积分电路3.0KΩ示波器图像}
+	\label{}
+\end{figure}
+实验所设参数为$R_1=3.0\text{k}\Omega\text{,}\quad C_1=10\mu\text{F},\quad f=100H\text{z}$\\
+$V_{pp}=572 \times 10^{-3}V$ \quad $T=10ms$
+\begin{figure}[{H}]
+	\centering
+	\includegraphics[width=0.4\linewidth]{RC积分电路5.1-100.jpg}
+	\caption{RC积分电路5.1KΩ示波器图像}
+	\label{}
+\end{figure}
+实验所设参数为$R_3=5.1\text{k}\Omega\text{,}\quad C_1=10\mu\text{F},\quad f=100H\text{z}$\\
+$V_{pp}=360 \times 10^{-3}V$ \quad $T=10ms$
+\item RL积分电路 
+ \begin{figure}[{H}]
+	\centering
+	\includegraphics[width=0.4\linewidth]{RL积分电路5.1.jpg}
+	\caption{RL积分电路5.1KΩ示波器图像}
+	\label{}
+ \end{figure}
+ 实验所设参数为$R_2=5.1\text{k}\Omega\text{,}\quad L_1=100m\text{H},\quad f=20KH\text{z}$\\
+$V_{pp}=2.98 V$ \quad $T=50\mu s$
+\begin{figure}[{H}]
+	\centering
+	\includegraphics[width=0.4\linewidth]{RL积分电路2.4.jpg}
+	\caption{RL积分电路2.4KΩ示波器图像}
+	\label{}
+\end{figure}
+实验所设参数为$R_4=2.4\text{k}\Omega\text{,}\quad L_1=100m\text{H},\quad f=20KH\text{z}$\\
+$V_{pp}=1.60 V$ \quad $T=50\mu s$
+
 	\end{enumerate}
 	
 	% ---
@@ -370,28 +405,40 @@
 	根据实验数据可知，由于R3的电阻比R1大，所以时间常数更小，符合公式。
 	此外实验存在一定的误差，可能来源与RC微分电路实验中误差来源相同，不过均在误差允许范围之内，实验较为成功。
 	%
-	\subsubsection{}
-	
-	% ---
-	
-	% 实验后思考题
-	\subsection{实验后思考题}
-	
-	%思考题1
-	\begin{question}
+	\subsubsection{RC积分电路}
+	实验数据如下表所示
+	\begin{table}[H]
+		\centering
 		
-	\end{question}
-	
-	% 思考题2
-	\begin{question}
+		\begin{tabular}{|ccc|}
+		\hline
+		电阻 & 值&峰峰值 \\
+		\hline
+		$R_1$ & $3.0\,\text{k}\Omega$&  $572 \times 10^{-3}\,V$\\
+		\hline
+		$R_3$ & $5.1\,\text{k}\Omega$ &$360 \times 10^{-3}\,V$\\
 		
-	\end{question}
-	
-	% 思考题3
-	\begin{question}
+		\hline
+		\end{tabular}
+		\end{table}
+		观察数据可知，在电容C一定时，电阻R越大，则峰峰值越小。
+		\subsubsection{RL积分电路}
+	实验数据如下表所示
+	\begin{table}[H]
+		\centering
 		
-	\end{question}
-	
+		\begin{tabular}{|ccc|}
+		\hline
+		电阻 & 值&峰峰值 \\
+		\hline
+		$R_2$ & $5.1\,\text{k}\Omega$&  $2.98V$\\
+		\hline
+		$R_4$ & $2.4\,\text{k}\Omega$ &$1.60V$\\
+		
+		\hline
+		\end{tabular}
+		\end{table}
+		观察数据可知，在电感L一定时，电阻R越大，则峰峰值越大。
 	% ---
 	
 	
@@ -399,24 +446,42 @@
 	\clearpage
 	
 	% 小标题
-	\section{ETX 实验名称××× \quad\heiti 结语}
+	\section{一阶电路暂态过程的研究\quad\heiti 结语}
 	% ---
 	
 	% 总结、杂谈与致谢
 	\subsection{实验心得和体会、意见建议等}
 	\begin{enumerate}
-		\item 
+		\item 实验总体难度不大，并且实验原理比较简单，需要将所学的知识更深层次理解
+		\item 此外最后一个实验中对于
 	\end{enumerate}
 	% ---
 	
 
 	% 附件
-	\subsection{附件及实验相关的软硬件资料等}
-	试验台桌面整理如%\cref{}所示。
+	\subsection{附件}
+	\begin{figure}[H]
+		\centering
+		\begin{minipage}{0.3\linewidth}
+			\centering
+			\includegraphics[width=\linewidth]{实验桌面.jpg}
+			\caption{实验桌面}
+		\end{minipage}
+		\hfill
+		\begin{minipage}{0.3\linewidth}
+			\centering
+			\includegraphics[width=\linewidth]{实验数据1.jpg}
+			\caption{实验数据1}
+		\end{minipage}
+		\hfill
+		\begin{minipage}{0.3\linewidth}
+			\centering
+			\includegraphics[width=\linewidth]{实验数据2.jpg}
+			\caption{实验数据2及教师签名}
+		\end{minipage}
+	\end{figure}
 	
-	实验报告个人签名如
-
-	% ---
+	
 	
 	
 \end{document}

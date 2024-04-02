@@ -213,116 +213,143 @@
 	\end{table}
 	% ---
 	
-	% 小标题
+
 	\section{基本电路元件伏安特性的测量 \quad\heiti 实验记录}
-	% ---
 	
 	% 实验过程记录
 	\subsection{实验内容、步骤与结果}
-	
-	
-	\subsubsection{操作步骤记录}
-	\begin{enumerate}
-		\item 
-	\end{enumerate}	
-	
-	
-
-	%
 	\subsubsection{测试线性电阻元件的伏安特性}
-%	\begin{enumerate}
-	操作步骤记录：\\
+	操作步骤记录
 	\begin{enumerate}
-		\item 首先构建进行电流表内接的实验电路，待测原件选为120$\omega$和51$\omega$的电阻。
-		\item 为防止电阻两端的功率不超过1w，设定在120$\omega$实验中的电压不超过6V，51$\omega$实验中电压不超过8V。
-		\item 测量过程均采用0.5V步长进行测量，通过调整电源电压进行注意测量并记录数据。
+		\item 用电压表和电流表分别采用方法一(电流表内接法)和方法二(电流表外接法)的两种方法实验。
+		\item 通过计算可知当电阻两端功率不超过1W时，最大电压和电流分别为：
+		\begin{itemize}
+			\item $51\Omega$：$I_{max}=0.14A$，$U_{max}=7.14V$；
+			\item $120\Omega$：$I_{max}=0.09A$，$U_{max}=10.95V$；
+		\end{itemize}
+	根据结果，设定在120$\Omega$实验中的电压不超过8V，51$\Omega$实验中电压不超过6V。
+	\item 测量过程均采用0.5V步长进行测量，通过调整电源电压进行注意测量并记录数据。
 		\item 完成电流表内接实验后，改变实验电路，进行电流表外接的电路进行实验
-	\end{enumerate}	
-		\begin{figure}[htb]
-	\centering
-		\includegraphics[width=0.2\textwidth]{内接法.png}
+		\item 计算电阻值，是根据测量的电压、电流值进行计算，计算结果和拟合图像见实验数据分析。
+	\end{enumerate}
+	
+	
+	\begin{figure}[H]
+		\begin{minipage}[b]{0.4\linewidth}
+		  \centering
+		  \includegraphics[width=\textwidth]{内接法.png}
 		\caption{内接法电路图}
-		  
-		\label{内接法电路图}
-	 \end{figure}
-	 \begin{figure}[htbp]
-	 	\centering
-	 	\includegraphics[width=0.3\textwidth]{内接法数据.png}
-	 	\caption{内接法实验数据}
-	 	\label{内接法实验数据}
-	 \end{figure}
-	 
-	 
-	 	\begin{figure}[htbp]
-	 	\centering
-	 	\includegraphics[width=0.2\textwidth]{外接法.png}
+		\end{minipage}
+		\hfill
+		\begin{minipage}[b]{0.4\linewidth}
+		  \centering
+		  \includegraphics[width=\textwidth]{外接法.png}
 	 	\caption{外接法电路图}
-	 	\label{外接法电路图}
-	 \end{figure}
-	 \begin{figure}[htbp]
-	 	\centering
-	 	\includegraphics[width=0.3\textwidth]{外接法数据.png}
+		\end{minipage}
+		\hfill
+	\end{figure}
+	
+	\begin{figure}[H]
+		\begin{minipage}[b]{0.4\linewidth}
+		  \centering
+		   \includegraphics[width=\textwidth]{内接法数据.png}
+	 	\caption{内接法实验数据}
+		\end{minipage}
+		\hfill
+		\begin{minipage}[b]{0.4\linewidth}
+		  \centering
+		  \includegraphics[width=\textwidth]{外接法数据.png}
 	 	\caption{外接法实验数据}
-	 	\label{外接法实验数据}
-	 \end{figure}
+		\end{minipage}
+		\hfill
+	\end{figure}
+
+	
+		
+	 
+	 
+	 	
 	 
 	 
 		\subsubsection{测试非线性电阻12V白炽灯的伏安特性}
+		\begin{enumerate}
+			\item 最大电压不能超过 12V，防止功率过大，烧坏元件。
+			\item 电路图如图7所示,根据小灯泡的预估阻值，采取电流表外接的方法进行测量。
+		
+		\end{enumerate}
 	%	\begin{enumerate}
-			\begin{figure}[H]
+		\begin{figure}[H]
+			\centering
+			\begin{minipage}[b]{0.4\linewidth}
 				\centering
-				\includegraphics[width=0.2\textwidth]{外接法.png}
+				\includegraphics[width=\textwidth]{外接法.png}
 				\caption{测量电路图}
 				\label{白炽灯测量电路图}
-			\end{figure}
-			
-			\begin{figure}[H]
+			\end{minipage}
+			\hfill
+			\begin{minipage}[b]{0.4\linewidth}
 				\centering
-				\includegraphics[width=0.3\textwidth]{小灯泡实验数据.png}
+				\includegraphics[width=\textwidth]{小灯泡实验数据.png}
 				\caption{白炽灯测量实验数据}
 				\label{白炽灯测量实验数据}
-			\end{figure}
+			\end{minipage}
+		\end{figure}
 	%	\end{enumerate}
 		
 			\subsubsection{测试直流稳压电源DP832的CH2的伏安特性}
-		%	\begin{enumerate}
-				\begin{figure}[H]
-				\centering
-				\includegraphics[width=0.3\textwidth]{内接法数据.png}
-				\caption{内接法实验数据}
-				\label{内接法实验数据}
-						\end{figure}
+			\begin{enumerate}
+				\item 利用电压表测电阻两端电压，然后除以电阻箱的已知电阻计算电流。
+				\item 电路图如图9所示。
+				
+			\end{enumerate}
 			\begin{figure}[H]
 				\centering
-				\includegraphics[width=0.2\textwidth]{CH2实验数据.png}
-				\caption{CH2实验数据}
-				\label{CH2实验数据}
+				\begin{minipage}[b]{0.5\linewidth}
+					\centering
+					\includegraphics[width=\textwidth]{实验3电路图.jpg}
+					\caption{实验电路图}
+				\end{minipage}
+				\hfill
+				\begin{minipage}[b]{0.3\linewidth}
+					\centering
+					\includegraphics[width=\textwidth]{CH2实验数据.png}
+					\caption{CH2实验数据}
+					\label{CH2实验数据}
+				\end{minipage}
 			\end{figure}
 		
 				\subsubsection{测试数控恒流源（DCS-01）的伏安特性}
 			%	\begin{enumerate}
 				\begin{figure}[H]
 					\centering
-					\includegraphics[width=0.2\textwidth]{内接法.png}
-					\caption{内接法电路图}
-					\label{内接法电路图}
+					\begin{minipage}[b]{0.5\linewidth}
+						\centering
+						\includegraphics[width=\textwidth]{恒流源.jpg}
+						\caption{实验电路图}
+						\label{内接法电路图}
+					\end{minipage}
+					\hfill
+					\begin{minipage}[b]{0.4\linewidth}
+						\centering
+						\includegraphics[width=\textwidth]{dcs实验数据.png}
+						\caption{数控恒流源（DCS-01）的伏安特性实验数据}
+						\label{dcs实验数据}
+					\end{minipage}
 				\end{figure}
-				\begin{figure}[H]
-					\centering
-					\includegraphics[width=0.3\textwidth]{dcs实验数据.png}
-					\caption{数控恒流源（DCS-01）的伏安特性实验数据}
-					\label{dcs实验数据}
-				\end{figure}
+				
 					\subsubsection{电流控制电压源（CCVS）基本特性测试}
 				\begin{enumerate}
 					
-					\item 输出特性\\
-					使CCVS控制电流I1=100μA 
+					\item 输出特性
+					\begin{enumerate}
+						\item 输出特性。使 CCVS 控制电流 \(I_1=100\mu A\)，负载电阻分别为 \(1K\Omega\)、\(3K\Omega\)、\(5K\Omega\) 时，用万用表测量输出电压 \(U_2\) 和输出电流 \(I_2\)，将数据填入表中。
+						\item 转移特性及输入特性。使 CCVS 负载 \(RL = 2K\Omega\)，改变控制量 \(I_1\) 大小，用万用表测量控制端电压 \(U_1\) 及输出电压 \(U_2\)，记录数据。
+					\end{enumerate}
 				\begin{table}[htbp]
 					\centering
 					\begin{tabular}{|l|l|l|}
 						\hline
-						r/$\Omega $ & u输出/v & i输出/ma  \\ \hline
+						r/$\Omega $ & u输出/V & i输出/mA  \\ \hline
 						1k & 6.085 & 6.085  \\ \hline
 						3k & 6.136 & 2.028  \\ \hline
 						5k & 6.162 & 1.232  \\ \hline
@@ -334,7 +361,7 @@
 					\centering
 					\begin{tabular}{|l|l|l|l|}
 						\hline
-						实际 & i输入/ma & u1/v & u2/v  \\ \hline
+						实际 & I1输入/mA & u1/v & u2/v  \\ \hline
 						0.129 & 0.1 & 0.787 & 6.448  \\ \hline
 						0.241 & 0.2 & 2.442 & 8.984  \\ \hline
 						0.349 & 0.3 & 8.094 & 9.019  \\ \hline
@@ -348,23 +375,14 @@
          	\end{enumerate}
 	
 	% ---
-	
-	% 原始数据
-	\clearpage
-	\subsection{原始数据记录}
-	实验记录本上的原始数据见%\cref{}（签字）。
-	
-	实验台桌面整理见%\textbf{附件}部分(\cref{})。
-	
-	其它原始数据见%\cref{}。
-	% ---
+
 	
 	% 问题记录
 	\subsection{实验过程遇到问题及解决办法}
 	\begin{enumerate}
 		\item 第一个实验中出现了与理论计算不相符的情况（两种方法一测量值偏大，一测量值偏小）而经过初步计算认定两值均偏小，虽然相对大小正确，经分析，可能由于当时天气为回南天，湿度较大，导致电路连接出现因潮湿而出现传输问题，可能会导致数据出现误差。
 		\item 第二个实验中起初由于电压较小，灯泡亮度较低，无法确认是否连接正常，可以选择从高电压进行测量，这样可以确认电路安全，也可以保证电路连接正确。
-		\item 第三个实验中，由于恒压源电阻接近于零故建立如  电路。
+		\item 第三个实验中，由于内电阻接近于零故建立如图9所示电路电路。
 		\item 第五个实验中，电路连接有很多难点，经过与老师讨论和同学互助，正确连接了电路，并帮助多位同学完成了电路连接，其中电路板12V供电起初并没有打开，出现了一组错误数据，其在数据记录原始版中有体现，在更正数据之后，得到了初步符合理论计算的数据。
 		\item 实验中很多连接需要充分利用各种借口的连接线，此外由于手持式万用表很容易损坏，出现了要更换保险丝的问题。
 	\end{enumerate}
@@ -401,50 +419,60 @@
 	\subsubsection{对实验一数据进行线性拟合}
 	\begin{enumerate}
 		\item 电压表内接法数据拟合
-			\begin{figure}[H]
+		\begin{figure}[H]
 			\centering
-			\includegraphics[width=0.4\textwidth]{内接法图片.png}
-			\caption{电压表内接51Ω拟合}
-			\label{电压表内接51Ω拟合}
+			\begin{minipage}[b]{0.4\linewidth}
+				\centering
+				\includegraphics[width=\textwidth]{内接法图片.png}
+				\caption{电压表内接51Ω拟合}
+				\label{电压表内接51Ω拟合}
+			\end{minipage}
+			\hfill
+			\begin{minipage}[b]{0.4\linewidth}
+				\centering
+				\includegraphics[width=\textwidth]{内接法图片120.png}
+				\caption{电压表内接120Ω拟合}
+				\label{电压表内接120Ω拟合}
+			\end{minipage}
 		\end{figure}
-		
-			\begin{figure}[H]
-			\centering
-			\includegraphics[width=0.4\textwidth]{内接法图片120.png}
-			\caption{电压表内接120Ω拟合}
-			\label{电压表内接120Ω拟合}
-		\end{figure}
-		\clearpage
+
 			\item 电压表外接法数据拟合
-				\begin{figure}[H]
-				\centering
-				\includegraphics[width=0.4\textwidth]{外接法51.png}
-				\caption{电压表外接51Ω拟合}
-				\label{电压表外接51Ω拟合}
-			\end{figure}
 			
-			\begin{figure}[H]
-				\centering
-				\includegraphics[width=0.4\textwidth]{外接法120.png}
-				\caption{电压表外接120Ω拟合}
-				\label{电压表外接120Ω拟合}
-			\end{figure}
-				\item 数据对比
-					\begin{figure}[H]
-					\centering
-					\includegraphics[width=0.4\textwidth]{51数据对比.png}
-					\caption{51Ω两种方法数据对比}
-					\label{51Ω两种方法数据对比}
-				\end{figure}
-				
+			
 				\begin{figure}[H]
 					\centering
-					\includegraphics[width=0.4\textwidth]{120数据对比.png}
-					\caption{120Ω两种方法数据对比}
-					\label{120Ω两种方法数据对比}
+					\begin{minipage}[b]{0.4\linewidth}
+						\centering
+						\includegraphics[width=\textwidth]{外接法51.png}
+						\caption{电压表外接51Ω拟合}
+						\label{电压表外接51Ω拟合}
+					\end{minipage}
+					\hfill
+					\begin{minipage}[b]{0.4\linewidth}
+						\centering
+						\includegraphics[width=\textwidth]{外接法120.png}
+						\caption{电压表外接120Ω拟合}
+						\label{电压表外接120Ω拟合}
+					\end{minipage}
+				\end{figure}
+				\item 数据对比
+				\begin{figure}[H]
+					\centering
+					\begin{minipage}[b]{0.45\linewidth}
+						\centering
+						\includegraphics[width=\textwidth]{51数据对比.png}
+						\caption{51Ω两种方法数据对比}
+						\label{51Ω两种方法数据对比}
+					\end{minipage}\hfill
+					\begin{minipage}[b]{0.45\linewidth}
+						\centering
+						\includegraphics[width=\textwidth]{120数据对比.png}
+						\caption{120Ω两种方法数据对比}
+						\label{120Ω两种方法数据对比}
+					\end{minipage}
 				\end{figure}
 				\item 数据分析\\
-				     内接法结果：$\text{R1=50.52±0. 007}\Omega $
+				 内接法结果：$\text{R1=50.52±0. 007}\Omega $
 				     \hspace{0.4cm}相对误差：$\text{r1=-0.009}$
 				     \hspace{0.4cm}$\text{R2=118.18±0. 02}\Omega$
 				     \hspace{0.4cm} 相对误差：$\text{r2=-0.015}$\\
@@ -452,17 +480,10 @@
 				     \hspace{0.4cm} 相对误差：$\text{r1=0.009}$
 				     \hspace{0.4cm}  $\text{R2=119.43±0. 02}\Omega $
 				     \hspace{0.4cm}相对误差：$\text{r2=-0.00475}$
-				 \\数据对比和理论分析可知，测量小电阻时外接法误差更小，测量大电阻时内接法误差更小，之后所有实验电路设计的选择均采用此项原则，例如对于恒压源内阻无限小的情况，采用电压表内接（防止电流表内阻影响测量）
-				 \\误差来源分析，正如前文所说，当时空气湿度较大，故对于120$\omega$的电阻伏安特性的测量与实际不相符，但是相对大小不变，故可认定实验数据准确，仅存在系统误差。
-				     
-				
-				
-			
-		
-		
+					 \indent 数据对比和理论分析可知，测量小电阻时外接法误差更小，测量大电阻时内接法误差更小，之后所有实验电路设计的选择均采用此项原则，例如对于恒压源内阻无限小的情况，采用电压表内接（防止电流表内阻影响测量）\\
+					 \indent 误差来源分析:正如前文所说，当时空气湿度较大，故对于120$\Omega$的电阻伏安特性的测量与实际不相符，但是相对大小不变，故可认定实验数据准确，仅存在系统误差。
 	\end{enumerate}
-	
-	%
+
 	\subsubsection{测试非线性电阻 12V 白炽灯的伏安特性}
 	\begin{enumerate}
 		\item 将实验数据进行绘图。
@@ -474,7 +495,7 @@
 		\end{figure}
 		\item 图片数据分析\\
 		由图可知，白炽灯（非线性电阻）的伏安特性曲线不是一条直线,电阻值随电压或电流的变化而变化。\\
-		根据曲线趋势可知，白炽灯的阻值随着电压和电流的增大逐渐升高，其物理意义为：电压电流升高导致灯丝的温度升高，从而加剧了分子的不规则运动，从而影响了金属的导电能力，故会导致阻值升高。
+		\textbf{根据曲线趋势可知，白炽灯的阻值随着电压和电流的增大逐渐升高，其物理意义为：电压电流升高导致灯丝的温度升高，从而加剧了分子的不规则运动，从而影响了金属的导电能力，故会导致阻值升高。}
 		
 	\end{enumerate}
 	
@@ -530,63 +551,64 @@
 
 	% 实验后思考题
 	\subsection{实验后思考题}
-	
+	实验原本思考题在实验前思考题中均完成作答，而本部分为实验后对于之前所写思考题的一个补充
 	%思考题1
 	\begin{question}
 		
 	\end{question}
 	
-	% 思考题2
-	\begin{question}
-		
-	\end{question}
-	
-	% 思考题3
-	\begin{question}
-		
-	\end{question}
-	
-	% ---
 	
 	
 	% 结语部分
 	\clearpage
 	
 	% 小标题
-	\section{ETX 实验名称××× \quad\heiti 结语}
+	\section{基本电路元件伏安特性的测量 \quad\heiti 结语}
 	% ---
 	
 	% 总结、杂谈与致谢
-	\subsection{实验心得和体会、意见建议等}
+	\subsection{实验心得和体会、意见建议}
 	\begin{enumerate}
-		\item 
+		\item 实验内容较多，基本上需要很繁琐的接线过程，并且需要进行频繁大量的读数，实验数据量和处理过程都很复杂。
+		\item 实验仪器要求很高，例如出现了仪器表显和实际测量的数据偏差较大的问题，（例如CCVS过程中我需要去测量实际输入电流，与显示的输入电流相差很大）
+		\item 实验仪器手持式万用表存在仪器问题，相对于台式，存在易损坏的问题，建议如果后续实验需要可以加入新的台式万用表，方便实验进行。
 	\end{enumerate}
 	% ---
 	
-	% 参考文献
-	\subsection{参考文献}
-	[1] 维基百科 https://zh.wikipedia.org
 	
-	[2] 沈韩.基础物理实验.——北京：科学出版社，2015.2 ISBN：978-7-03-043311-4
-	
-	% ---
 	
 	% 附件
-	\subsection{附件及实验相关的软硬件资料等}
-	试验台桌面整理如%\cref{}所示。
-	
-	实验报告个人签名如\cref{fig:name}。
-	
-	\begin{figure}[htbp]
+	\subsection{附件}
+	实验原始数据
+	\begin{figure}[H]
+		\begin{minipage}[b]{0.3\linewidth}
+		  \centering
+		  \includegraphics[width=\linewidth]{数据1.jpg}
+		  \caption{原始数据1}
+		\end{minipage}
+		\hfill
+		\begin{minipage}[b]{0.3\linewidth}
+		  \centering
+		  \includegraphics[width=\linewidth]{数据2.jpg}
+		  \caption{原始数据2}
+		\end{minipage}
+		\hfill
+		\begin{minipage}[b]{0.3\linewidth}
+		  \centering
+		  \includegraphics[width=\linewidth]{数据3.jpg}
+		  \caption{原始数据3}
+		\end{minipage}
+	\end{figure}
+	试验台桌面整理。
+	\begin{figure}[{H}]
 		\centering
-		\includegraphics[width=0.7\textwidth]{name.png}
-		\caption{个人签名}
-		\label{fig:name}
+		\includegraphics[width=0.4\linewidth]{桌面.jpg}
+		\caption{桌面整理}
+		\label{}
 	\end{figure}
 	
-	% ---
+
 	
-	相关代码已上传至Github。
 	
 	
 	

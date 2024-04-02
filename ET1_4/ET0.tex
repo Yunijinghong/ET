@@ -57,13 +57,8 @@
 			\item 数据处理及分析讨论：处理实验原始数据（学习仪器使用类型的实验除外），对数据的可靠性和合理性进行分析；按规范呈现数据和结果（图、表），包括数据、图表按顺序编号及其引用；分析物理现象（含回答实验思考题，写出问题思考过程，必要时按规范引用数据）；最后得出结论。\textcolor{red}{\textbf{（30分）}}
 		\end{enumerate}
 		\textbf{实验报告就是将预习报告、实验记录、和数据处理与分析合起来，加上本页封面。\textcolor{red}{（80分）}}
-		\item 每次完成实验后的一周内交\textbf{实验报告}（特殊情况不能超过两周）。
-		\item \textbf{其它注意事项}：
-		\begin{enumerate}
-			\item 请认真查看并理解实验讲义第一章内容；
-			\item 注意实验器材的合理使用；
-			\item 使用结束使用各种仪器之后需要将其放回原位。
-		\end{enumerate}
+		\item 实验报告在\textcolor{red}{\textbf{每个小结（补做）的之后一周内}}提交，最后一次实验，在\textcolor{red}{\textbf{结束一周内}}提交。
+		
 	\end{enumerate}
 	
 
@@ -179,7 +174,7 @@
 	% ---
 	
 	% 小标题
-	\section{ETX 实验名称×××  \quad\heiti 实验记录}
+	\section{ET4戴维南定理和诺顿定理  \quad\heiti 实验记录}
 	% ---
 	
 	% 实验过程记录
@@ -217,15 +212,106 @@
 		 
 		 \end{enumerate}	
 		 
-		 \item 测量等效电阻
 		 
 	    
 		
 	\end{enumerate}	
 
 
-	
-	% ---
+	\subsubsection{测量等效电阻} 
+	\begin{enumerate}
+
+     \item 开路电压、短路电流法
+	 $U=U_{oc}=3.93V,I=I_{sc}=19.609mA$，$R_{\mathrm{eq}}=200. 41817 \Omega $
+	 \item 伏安法
+	     \begin{figure}[{H}]
+			\centering
+			\includegraphics[width=0.4\linewidth]{伏安法电路图.png}
+			\caption{伏安法电路图}
+			\label{}
+		 \end{figure}
+		 \begin{table}[h]
+			\centering
+			\begin{tabular}{|c|c|c|}
+			\hline
+			$U_s$ (V) & $I_s$ (mA) & $U_v$ (V) \\
+			\hline
+			1 & 4.997 & 0.993 \\
+			2 & 9.954 & 1.985 \\
+			3 & 14.839 & 2.963 \\
+			4 & 19.795 & 3.952 \\
+			5 & 24.747 & 4.940 \\
+			6 & 29.704 & 5.928 \\
+			7 & 34.667 & 6.916 \\
+			8 & 39.634 & 7.905 \\
+			9 & 44.747 & 8.925 \\
+			10 & 49.755 & 9.918 \\
+			\hline
+			\end{tabular}
+			\caption{伏安法实验数据}
+			\label{tab:data}
+			\end{table}
+			\item 半流法
+			\begin{figure}[{H}]
+				\centering
+				\includegraphics[width=0.4\linewidth]{半流法.png}
+				\caption{半流法电路图}
+				\label{}
+			\end{figure}
+			使用伏安法中$U_s=10V$时电流为$49.755mA$\\目标电流为$24.8775mA$，
+			最终测得$R_w=R_{\mathrm{eq}}=196.341 \Omega $
+			\item 半压法
+			\begin{figure}[{H}]
+				\centering
+				\includegraphics[width=0.4\linewidth]{半压法.png}
+				\caption{半压法电路图}
+				\label{}
+			\end{figure}
+			设定$U_s=10V$，调整到$U_{Rw}=5.051V$\\
+			最终测得$R_w=196.941\Omega$
+			
+
+		 
+	\end{enumerate}
+	\subsubsection{验证戴维南定理} 
+\begin{figure}[{H}]
+	\centering
+	\includegraphics[width=0.9\linewidth]{戴维南定理.png}
+	\caption{戴维南定理电路图}
+	\label{}
+\end{figure}
+使用$U_{oc}$进行测量，并且等效电阻$R_5=R_{eq}=200\Omega$，外接$R_6=100\Omega$
+ 测得$U=1.304V $   $I=13.074mA$\\
+ \indent 使用N有源网络端口外接负载$R_6=100\Omega$
+ 测得$U=1.3077V$   $ I=13.119mA$
+ \subsubsection{验证诺顿定理}
+ \begin{figure}[{H}]
+	\centering
+	\includegraphics[width=0.9\linewidth]{诺顿定理.png}
+	\caption{诺顿定理实验电路图}
+	\label{}
+ \end{figure}
+ 使用$I_{sc}$进行测量，并且将戴维南等效电阻$R_5=R_{eq}=200\Omega$并联后，外接$R_6=100\Omega$。\\
+\indent 测得$U=1.30418V$   $ I=13.016mA$
+\subsubsection{测量实验室函数信号发生器的戴维南等效内阻}
+ 实验电路图采用半压法电路图
+ \begin{figure}[{H}]
+	\centering
+	\includegraphics[width=0.6\linewidth]{半压法.png}
+	\caption{实验电路图（左侧连接信号发生器）}
+	\label{}
+ \end{figure}
+ 初始值设定信号发生器为：$f = 1\, \text{kHz} \quad V_{\text{pp}} = 2500\, \text{mV} $\\
+ \indent $\text{使用半压法:} \quad U_s = 6\, \text{V} $\\
+ \indent $50\Omega \quad U = 3.015\, \text{V} \quad R_w = 51.7942\, \Omega $\\
+ \indent 高阻$ U = 2.997\, \text{V} \quad R_w = 52.665\, \Omega$\\
+ \indent 初始值设定信号发生器为：$f = 1\, \text{kHz} \quad V_{\text{pp}} = 2500\, \text{mV} $\\
+ \indent $\text{使用半压法:} \quad U_s = 8\, \text{V} $\\
+ \indent $50\Omega \quad U = 4.000\, \text{V} \quad R_w = 52.501\, \Omega $\\
+ \indent 高阻$ U = 4.041\, \text{V} \quad R_w = 52.638\, \Omega$
+
+ 根据实验结果分析：负载不同时，Rw变化很小.负载 $50\Omega$ 的信号是高负载的两倍
+ 
 	
 	% 原始数据
 	\clearpage
@@ -256,7 +342,7 @@
 			\hline
 			专业：& 物理学 &年级：& 2022级\\
 			\hline
-			姓名： &  & 学号：& \\
+			姓名： & 黄罗琳、王显 & 学号：&22344001 22344002 \\
 			\hline
 			日期：&  & 评分： &\\
 			\hline
@@ -265,7 +351,7 @@
 	% ---
 	
 	% 小标题
-	\section{ETX 实验名称××× \quad\heiti 分析与讨论}
+	\section{ET4戴维南定理和诺顿定理\quad\heiti 分析与讨论}
 	% ---
 	
 	% 数据处理
@@ -313,7 +399,7 @@
 	\clearpage
 	
 	% 小标题
-	\section{ETX 实验名称××× \quad\heiti 结语}
+	\section{ET4戴维南定理和诺顿定理\quad\heiti 结语}
 	% ---
 	
 	% 总结、杂谈与致谢

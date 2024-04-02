@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.9.16)  27 MAR 2024 17:00
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.9.16)  2 APR 2024 17:04
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -914,6 +914,48 @@ LaTeX Warning: Label `' multiply defined.
 
 LaTeX Warning: Label `@cref' multiply defined.
 
+
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `@cref' multiply defined.
+
+
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `@cref' multiply defined.
+
+
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `@cref' multiply defined.
+
+
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `@cref' multiply defined.
+
+
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `@cref' multiply defined.
+
+
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `@cref' multiply defined.
+
+
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `@cref' multiply defined.
+
 )
 \openout1 = `ET0.aux'.
 
@@ -1229,6 +1271,10 @@ File: ./images//RL微分电路3.0.jpg Graphic file (type bmp)
 <./images//RL微分电路3.0.jpg>
 File: ./images//RL微分5.1.jpg Graphic file (type bmp)
 <./images//RL微分5.1.jpg>
+File: ./images//RC积分电路3-100.jpg Graphic file (type bmp)
+<./images//RC积分电路3-100.jpg>
+File: ./images//RC积分电路5.1-100.jpg Graphic file (type bmp)
+<./images//RC积分电路5.1-100.jpg>
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1238,14 +1284,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [7]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                \hskip 10.95pt
-(hyperref)                replaced by space on input line 335.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\heiti' on input line 335.
+File: ./images//RL积分电路5.1.jpg Graphic file (type bmp)
+<./images//RL积分电路5.1.jpg>
+File: ./images//RL积分电路2.4.jpg Graphic file (type bmp)
+<./images//RL积分电路2.4.jpg>
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1254,9 +1296,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[8
-
-]
+[8]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -1268,11 +1308,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \hskip 10.95pt
-(hyperref)                replaced by space on input line 402.
+(hyperref)                replaced by space on input line 370.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\heiti' on input line 402.
+(hyperref)                removing `\heiti' on input line 370.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1283,6 +1323,39 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [10
 
+]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[11]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \hskip 10.95pt
+(hyperref)                replaced by space on input line 449.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\heiti' on input line 449.
+
+File: ./images//实验桌面.jpg Graphic file (type bmp)
+<./images//实验桌面.jpg>
+File: ./images//实验数据1.jpg Graphic file (type bmp)
+<./images//实验数据1.jpg>
+File: ./images//实验数据2.jpg Graphic file (type bmp)
+<./images//实验数据2.jpg>
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[12
+
 ] (./ET0.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -1291,15 +1364,15 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `ET0.out' has not changed.
-(rerunfilecheck)             Checksum: CD5C363A97D0DD49E019713FCD02AA95;2433.
+(rerunfilecheck)             Checksum: A7449A1C3A93CFFA6692D7692693409C;2392.
  ) 
 Here is how much of TeX's memory you used:
- 38108 strings out of 476683
- 823982 string characters out of 5807575
+ 38181 strings out of 476683
+ 825725 string characters out of 5807575
  1883012 words of memory out of 5000000
- 57724 multiletter control sequences out of 15000+600000
+ 57790 multiletter control sequences out of 15000+600000
  519201 words of font info for 86 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 105i,12n,107p,427b,966s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 105i,13n,107p,427b,966s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on ET0.pdf (10 pages).
+Output written on ET0.pdf (12 pages).
