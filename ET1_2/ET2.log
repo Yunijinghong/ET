@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.9.16)  2 APR 2024 11:33
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.9.16)  7 APR 2024 12:11
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -895,7 +895,20 @@ File: tc-xetex.def 2019/01/04 v2.2 Clipping driver for xetex
  (d:/texlive/2023/texmf-dist/tex/latex/ifoddpage/ifoddpage.sty
 Package: ifoddpage 2022/10/18 v1.2 Conditionals for odd/even page detection
 \c@checkoddpage=\count380
-)) (./ET2.aux)
+)) (./ET2.aux
+
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `@cref' multiply defined.
+
+
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `@cref' multiply defined.
+
+)
 \openout1 = `ET2.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 12.
@@ -1291,6 +1304,8 @@ File: ./images//接线总览.jpg Graphic file (type bmp)
 <./images//接线总览.jpg>
 File: ./images//输出特性.png Graphic file (type bmp)
 <./images//输出特性.png>
+File: ./images//转移特性.png Graphic file (type bmp)
+<./images//转移特性.png>
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1300,14 +1315,33 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [13]
+File: ./images//输入特性.png Graphic file (type bmp)
+<./images//输入特性.png>
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[14]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[15]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \hskip 10.95pt
-(hyperref)                replaced by space on input line 566.
+(hyperref)                replaced by space on input line 600.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\heiti' on input line 566.
+(hyperref)                removing `\heiti' on input line 600.
 
 File: ./images//数据1.jpg Graphic file (type bmp)
 <./images//数据1.jpg>
@@ -1324,30 +1358,25 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[14
+[16
 
-]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[15] (./ET2.aux)
+] (./ET2.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package rerunfilecheck Info: File `ET2.out' has not changed.
-(rerunfilecheck)             Checksum: 41C3FA1A66FDB62E50437371B79C2580;3823.
+(rerunfilecheck)             Checksum: 7FC741C89818D0E924F9191174F8191F;3783.
  ) 
 Here is how much of TeX's memory you used:
- 38318 strings out of 476683
- 827336 string characters out of 5807575
+ 38347 strings out of 476683
+ 827937 string characters out of 5807575
  1879012 words of memory out of 5000000
- 57915 multiletter control sequences out of 15000+600000
+ 57942 multiletter control sequences out of 15000+600000
  519217 words of font info for 88 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  105i,12n,107p,427b,966s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on ET2.pdf (15 pages).
+Output written on ET2.pdf (16 pages).

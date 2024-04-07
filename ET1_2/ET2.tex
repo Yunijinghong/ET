@@ -35,7 +35,7 @@
 		\renewcommand\arraystretch{1.7}
 		\begin{tabularx}{\textwidth}{|X|X|X|X|}
 			\hline
-			年级、专业： & 2022级 物理学 &组号： & 2\\
+			年级、专业： & 2022级 物理学 &组号： & D8\\
 			\hline
 			姓名： & 黄罗琳、王显 & 学号： & 22344001、22344002\\
 			\hline
@@ -184,11 +184,11 @@
 	\begin{question}
 		两种受控源中的ｇ、$\gamma$的意义是什么？如何测得？\\
 		g为流控电压源的转移电阻，是输出电流与输入电压之比。\\
-		$\gamma$为压控电流源的转移电导，是输出电流与输入电压之比。
+		$\gamma$为压控电流源的转移电导，是输出电压与输入电流之比。
 	\end{question}
 	\begin{question}
 		受控源输入输出是否符合能量守恒，其中的能量转移是怎么进行的？\\
-		受控源输入输出符合能量守恒；受控源的输出能量来自于电路的其他部分或外部提供，而不是受控源本身。
+		受控源输入输出符合能量守恒；受控源的输出能量来自于电路的其他部分或外部提供，它是通过其他电路元件对输入信号进行放大或转换，这个过程中能量来源是其他元件的供电，而不是受控源本身，遵循能量守恒定律。
 	\end{question}
 	% 实验记录	
 	\clearpage
@@ -505,11 +505,11 @@
 		\item 将实验数据进行绘图。
 		\begin{figure}[H]
 			\centering
-			\includegraphics[width=0.4\textwidth]{CH2数据图片.png}
+			\includegraphics[width=0.45\textwidth]{CH2数据图片.png}
 			\caption{直流稳压电源（DP831） CH2 的伏安特性曲线}
 			\label{CH2数据图片}
 		\end{figure}
-		\item 图片数据分析\\
+		\item 图片数据分析\quad
 		由图可知，伏安特性曲线不是一条直线,电阻值随电压或电流的变化而变化，这是由于恒压源并非理想电源，存在内阻，故输出电压会产生变化，线性拟合后，斜率的绝对值即为电源内阻。\\
 		$r_\text{内}=3.23858\times10^{-4}\Omega.$
 		
@@ -519,7 +519,7 @@
 		\item 将实验数据进行绘图。
 		\begin{figure}[H]
 			\centering
-			\includegraphics[width=0.4\textwidth]{数控恒流源.png}
+			\includegraphics[width=0.45\textwidth]{数控恒流源.png}
 			\caption{数控恒流源的伏安特性曲线}
 			\label{数控恒流源}
 		\end{figure}
@@ -539,13 +539,27 @@
 		
 		\begin{figure}[H]
 			\centering
-			\includegraphics[width=0.4\textwidth]{输出特性.png}
+			\includegraphics[width=0.65\textwidth]{输出特性.png}
 			\caption{电流控制电压源（CCVS）输出特性}
 			\label{输出特性}
 		\end{figure}
-		图片数据分析：由图可知，电流控制电压源，尽管输出电流发生了变化，但是输出电压依旧不变。
-		\item 
-		
+		数据分析：电流控制电压源（CCVS）的输出电压基本不随输出电流（负载电阻）的变化而变化，这是因为受控电压源的输出电压是由输入端电流控制的，只要输入端电流不改变，且电流在正常工作区间，那么输出电压就不会变化。
+		\item 转移特性
+\begin{figure}[{H}]
+	\centering
+	\includegraphics[width=0.6\linewidth]{转移特性.png}
+	\caption{电流控制电压源（CCVS）转移特性}
+	\label{}
+\end{figure}		
+$\gamma$（转移电阻）是表征电流控制电压源（CCVS）的转移特性的物理量，它的定义是输出端电压与输入端电流的比值。从实验数据可知，当控制电流较小时，转移电阻近似为常数。当控制电流较大时，转移电阻不断减小，原因可能是超出了受控电压源的工作电流区间。
+\item 输入特性
+ \begin{figure}[{H}]
+	\centering
+	\includegraphics[width=0.4\linewidth]{输入特性.png	}
+	\caption{电流控制电压源（CCVS）输入特性}
+	\label{}
+ \end{figure}
+ 由实验数据可知，在控制电流较小时，电流控制电压源（CCVS）的控制端电压近似与控制电流成正比，此时受控源在正常工作电流区间内，近似为线性受控源。\textbf{当控制电流较大时，受控源的等效电阻变大，原因可能是此时的电流超出了受控源的正常工作区间。}
 	
 	\end{enumerate}
 
@@ -554,9 +568,29 @@
 	实验原本思考题在实验前思考题中均完成作答，而本部分为实验后对于之前所写思考题的一个补充
 	%思考题1
 	\begin{question}
-		
+		发热对电阻伏安特性的影响（查找资料后详细说明）
 	\end{question}
-	
+	电阻的发热会影响其电阻特性，这可以通过考虑热效应来解释。当电流通过电阻时，会产生电阻发热，导致电阻温度升高。由于材料的电阻率与温度之间存在正相关关系，电阻的电阻值通常随温度的升高而增加。其表达式如下：
+
+\[ R(T) = R_0 \left[1 + \alpha \cdot (T - T_0)\right] \]
+
+其中：
+\begin{itemize}
+    \item \( R(T) \) 是温度为 \( T \) 时的电阻值。
+    \item \( R_0 \) 是参考温度 \( T_0 \) 下的电阻值。
+    \item \( \alpha \) 是电阻温度系数（温度系数）。
+    \item \( T \) 是电阻的温度。
+    \item \( T_0 \) 是参考温度。
+\end{itemize}
+
+这个公式说明了电阻值随温度变化的关系。通常情况下，电阻温度系数 \( \alpha \) 是正值，这意味着电阻值随温度的增加而增加。\\
+\( \alpha \) 是正值的原因：温度升高会导致电阻升高的原因主要涉及材料内部原子或离子的热运动。这种热运动会增加电阻材料中电子与原子（或离子）之间的散射，导致电子通过材料时遇到更多的阻力，从而增加了电阻。
+
+在晶体结构的材料中，如金属或半导体，温度升高会增加原子或离子的热振动。这种振动增加会使得电子在材料中传输时更容易与原子或离子发生碰撞。这些碰撞会导致电子的平均自由程减小，从而增加了电子在材料中的有效阻力。
+
+在金属中，电阻值随温度升高而增加的主要原因是原子振动增加导致电子与晶格缺陷和杂质发生散射的频率增加。在半导体中，温度升高会增加电子与杂质、缺陷、声子等散射中心的相互作用，从而增加了电阻。
+
+因此，温度升高会导致材料内部原子或离子的热振动增加，这进一步导致了电子在材料中的散射增加，从而使电阻增加。
 	
 	
 	% 结语部分
@@ -567,11 +601,12 @@
 	% ---
 	
 	% 总结、杂谈与致谢
-	\subsection{实验心得和体会、意见建议}
+	\subsection{实验心得和体会}
 	\begin{enumerate}
 		\item 实验内容较多，基本上需要很繁琐的接线过程，并且需要进行频繁大量的读数，实验数据量和处理过程都很复杂。
 		\item 实验仪器要求很高，例如出现了仪器表显和实际测量的数据偏差较大的问题，（例如CCVS过程中我需要去测量实际输入电流，与显示的输入电流相差很大）
 		\item 实验仪器手持式万用表存在仪器问题，相对于台式，存在易损坏的问题，建议如果后续实验需要可以加入新的台式万用表，方便实验进行。
+		\item 本实验报告采用LATEX编辑。
 	\end{enumerate}
 	% ---
 	
@@ -581,28 +616,28 @@
 	\subsection{附件}
 	实验原始数据
 	\begin{figure}[H]
-		\begin{minipage}[b]{0.3\linewidth}
+		\begin{minipage}[b]{0.25\linewidth}
 		  \centering
 		  \includegraphics[width=\linewidth]{数据1.jpg}
 		  \caption{原始数据1}
 		\end{minipage}
 		\hfill
-		\begin{minipage}[b]{0.3\linewidth}
+		\begin{minipage}[b]{0.25\linewidth}
 		  \centering
 		  \includegraphics[width=\linewidth]{数据2.jpg}
 		  \caption{原始数据2}
 		\end{minipage}
 		\hfill
-		\begin{minipage}[b]{0.3\linewidth}
+		\begin{minipage}[b]{0.25\linewidth}
 		  \centering
 		  \includegraphics[width=\linewidth]{数据3.jpg}
 		  \caption{原始数据3}
 		\end{minipage}
 	\end{figure}
 	试验台桌面整理。
-	\begin{figure}[{H}]
+	\begin{figure}[H]
 		\centering
-		\includegraphics[width=0.4\linewidth]{桌面.jpg}
+		\includegraphics[width=0.15\linewidth]{桌面.jpg}
 		\caption{桌面整理}
 		\label{}
 	\end{figure}
