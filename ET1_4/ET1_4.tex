@@ -29,7 +29,7 @@
 		\renewcommand\arraystretch{1.7}
 		\begin{tabularx}{\textwidth}{|X|X|X|X|}
 			\hline
-			年级、专业： & 2022级 物理学 &组号： & \\
+			年级、专业： & 2022级 物理学 &组号： &D8 \\
 			\hline
 			姓名： &  黄罗琳，王显  & 学号： &22344001 22344002   \\
 			\hline
@@ -97,15 +97,15 @@
 			\hline
 			编号& 仪器用具名称 & 数量 &  主要参数（型号，测量范围，测量精度等） \\
 			\hline
-			1& 电路原理箱或板 & 1 &  \\
+			1& 电路原理箱或板 & 1 & 戴维南定理和诺顿定理 \\
 			\hline
-			2& 稳压源 & 1 &  \\
+			2& 稳压源 & 1 &  RIGOL DP831\\
 			\hline
 			3& 直流电流源 & 1 &  \\
 			\hline
-			4& 直流电流表 & 3 &  \\
+			4& 直流电流表 & 3 & RIGOL DM3058E \\
 			\hline
-			5& 直流电压表 & 2 &  \\
+			5& 直流电压表 & 2 &  RIGOL DM3058E\\
 			\hline
 			6& 电流表专用线 & 3 &  \\
 			\hline
@@ -165,7 +165,7 @@
 			\hline
 			室温： &  25℃& 实验地点： & A522 \\
 			\hline
-			学生签名：&  & 评分： &\\
+			学生签名：& \includegraphics[width=1cm]{签字.jpg} \includegraphics[width=1cm]{wx.jpg}  & 评分： &\\
 			\hline
 			实验时间：& 2024/3/20 & 教师签名：&\\
 			\hline
@@ -203,11 +203,11 @@
 		 \begin{enumerate}
 	     
 		 \item 电压零示法\\
-		 $\text{最初设定外加电压为 3.9V、0.1A   电压(电压表零示数结果):2.665mV }$\\
+		 最初设定外加电压为 3.9V、0.1A  ，在直接测量法中结果为3.93V，故选3.9V为初始电压设定 \\电压(电压表零示数结果):2.665mV \\
 		 最终调节外加电压为$\text{U=3.93V}$
 		 
 		 \item 电路零示法\\
-		 $\text{ 最初设定外加电压为 3.9V、0.1A  电流(电流表零示数结果):0.112mA }$\\
+		  最初设定外加电压为 3.9V、0.1A，选定3.93V原因与电压零示法相同  \\ 电流(电流表零示数结果):0.112mA\\
 		 最终调节外加电压为$\text{U=3.93V}$
 		 
 		 \end{enumerate}	
@@ -216,17 +216,15 @@
 	    
 		
 	\end{enumerate}	
-
-
 	\subsubsection{测量等效电阻} 
 	\begin{enumerate}
 
-     \item 开路电压、短路电流法
+     \item 开路电压、短路电流法（内部有源）\\
 	 $U=U_{oc}=3.93V,I=I_{sc}=19.609mA$，$R_{\mathrm{eq}}=200. 41817 \Omega $
-	 \item 伏安法
+	 \item 伏安法（内部无源）
 	     \begin{figure}[{H}]
 			\centering
-			\includegraphics[width=0.4\linewidth]{伏安法电路图.png}
+			\includegraphics[width=0.6\linewidth]{伏安法电路图.png}
 			\caption{伏安法电路图}
 			\label{}
 		 \end{figure}
@@ -251,16 +249,16 @@
 			\caption{伏安法实验数据}
 			\label{tab:data}
 			\end{table}
-			\item 半流法
+			\item 半流法（内部无源）
 			\begin{figure}[{H}]
 				\centering
 				\includegraphics[width=0.4\linewidth]{半流法.png}
 				\caption{半流法电路图}
 				\label{}
 			\end{figure}
-			使用伏安法中$U_s=10V$时电流为$49.755mA$\\目标电流为$24.8775mA$，
+			使用伏安法中$U_s=10V$时电流为$49.755mA$\\目标电流为$24.8775mA$\\
 			最终测得$R_w=R_{\mathrm{eq}}=196.341 \Omega $
-			\item 半压法
+			\item 半压法（内部无源）
 			\begin{figure}[{H}]
 				\centering
 				\includegraphics[width=0.4\linewidth]{半压法.png}
@@ -315,18 +313,15 @@
 	
 	% 原始数据
 	\clearpage
-	\subsection{原始数据记录}
-	实验记录本上的原始数据见%\cref{}（签字）。
 	
-	实验台桌面整理见%\textbf{附件}部分(\cref{})。
-	
-	其它原始数据见%\cref{}。
 	% ---
 	
 	% 问题记录
 	\subsection{实验过程遇到问题及解决办法}
 	\begin{enumerate}
-		\item 
+		\item 实验过程中接线需要仔细思考，有些接线并不能很好的满足仪器的接口要求，就需要寻找符合要求的线材进行接线，从而完成实验电路图。
+		\item 在测量电流时，台式万用表的读数会在一定范围内进行变化，这可能是由于电流流过导致温度升高从而出现了阻值变化，所以在实验过程中统一选取电流稳定时的某一示数，保证了误差在一定范围内。
+		\item 在进行\textbf{测量实验室函数信号发生器的戴维南等效内阻}这一实验中时，起初对实验电路的内部构造不够了解，最后通过老师的讲解理解了为什么负载不同信号会出现变化。
 	\end{enumerate}
 	% ---
 	
@@ -344,7 +339,7 @@
 			\hline
 			姓名： & 黄罗琳、王显 & 学号：&22344001 22344002 \\
 			\hline
-			日期：&  & 评分： &\\
+			日期：& 2024/3/20 & 评分： &\\
 			\hline
 		\end{tabularx}
 	\end{table}
@@ -355,66 +350,188 @@
 	% ---
 	
 	% 数据处理
-	\subsection{实验数据分析}
+	\subsection{对于有源一端口的理论计算}
+	\begin{figure}[H]
+		\begin{minipage}[b]{0.45\linewidth}
+			\centering
+			\includegraphics[width=\linewidth]{原始电路板.jpg}
+			\caption{实验所用电路板}
+		\end{minipage}
+		\hfill
+		\begin{minipage}[b]{0.45\linewidth}
+			\centering
+			\includegraphics[width=\linewidth]{手绘.jpg}
+			\caption{使用N有源网络内部电路图}
+		\end{minipage}
+	\end{figure}
+	计算可得其内部电阻理论值为$R=200 \Omega $，基于此项数据对实验结果进行如下误差分析。
+	\subsection{测量开路电压、短路电流}
 	
 	%
-	\subsubsection{}
+	\subsubsection{直接测量法测量}
+	$\mathrm{U=3.93V~,~I=19.609mA}$\\
+	\indent 而理论值$\mathrm{U=4V~,~I=20mA}$\\
+	\indent 则相对误差为：$r=-1.75\%$\quad$r=-1.99\%$ \\
+	\indent 误差可能来源于：N网络内部的电阻与设定阻值不同，可能更大，从而导致了，内阻增大，从而导致了分压增大，从而电压变小，短路电流减少。
+	\subsubsection{间接测量法（电路图）}
 	\begin{enumerate}
-		\item 
+		\item 电压零示法\\
+		测量值：$\text{U=3.93V}$\quad 电压(电压表零示数结果):2.665mV \\
+		理论值为：$\text{U=4V}$
+		\quad 相对误差为：$r=-1.75\%$\\
+		误差可能来源于：除与直接测量法相同的误差来源之外（内阻更大），还可能是因为在实验过程调整电压表为零时，仅仅是调整电压为2.665mV，从而导致测量值比实际值较小，但是虽然出现不为零的情况。\textbf{但是其测量值仍在3.93V附近，所以说明误差仍是内阻导致的问题。}
+		\item 电流零示法\\
+		测量值：$\text{U=3.93V}$\quad 电流(电流表零示数结果):0.112mA \\
+		理论值为：$\text{U=4V}$
+		\quad 相对误差为：$r=-1.75\%$\\
+		误差可能来源于：电流表不能完全到达零示数，但是其仍然在3.93V附近。并且由于仪器精度问题，其与电压零示法结果相同，均为3.93V。
 	\end{enumerate}
 	
 	%
-	\subsubsection{}
-	\begin{enumerate}
-		\item 
-	\end{enumerate}
+	\subsection{测量等效电阻}
 	
-	%
-	\subsubsection{}
-	
+		\subsubsection{开路电压、短路电流法}
+	 $U=U_{oc}=3.93V,I=I_{sc}=19.609mA$，$R_{\mathrm{eq}}=200. 41817 \Omega $\\
+	 \indent 与理论值$R=200 \Omega $比较，相对误差为：$r=0.209\%$\\\indent 
+	 误差可能来源于电流表的内阻引入的，与电路串联后导致所测量的电阻增大。
+	 \subsubsection{伏安法} 
+	  根据实验数据进行图像拟合，如下所示：
+	  \begin{figure}[{H}]
+		\centering
+		\includegraphics[width=0.6\linewidth]{拟合.png}
+		\caption{伏安法拟合图像}
+		\label{}
+	  \end{figure}
+	  根据图像斜率可知：$R_{\mathrm{eq}}=199.40254\Omega $
+	  \\ \indent 与理论值$R=200 \Omega $比较，相对误差为：$r=-0.299\%$\\
+	  \indent 实验误差相比于其他实验方法明显偏小，这说明通过线性拟合的方式可以得到更加准确的结果。
+	  \subsubsection{半流法}
+	  测得$R_w=R_{\mathrm{eq}}=196.341 \Omega $
+\\ \indent 与理论值$R=200 \Omega $比较，相对误差为：$r=-1.830\%$\\
+\indent 误差可能来源于电表的示数存在一定的精度问题，\textbf{不能做到完全的精确一半的电流}，从而计算结果与实际存在较小的差距。并且可能由于调整目标电流时电流值存在一定的波动，导致最终实验结果存在误差，并且在测量阻值时也会存在仪器误差，并且变阻器的调整会出现主观的操作问题（难以准确控制）并且接入电路的电源也可能存在内阻，这也会导致实验出现误差。\\
+\indent 这些误差影响综合起来，导致了实验结果比理论值偏小。
+\subsubsection{半压法} 
+ 测得$R_w=R_{\mathrm{eq}}=196.941 \Omega $
+ \\\indent 与理论值$R=200 \Omega $比较，相对误差为：$r=-1.530\%$\\
+ \indent 误差来源基本上与半流法误差来源相同，电表的示数存在一定的精度问题，\textbf{不能做到完全的精确一半的电压}。\\
+
 	% ---
 	
 	% 实验后思考题
-	\subsection{实验后思考题}
-	
-	%思考题1
-	\begin{question}
-		
-	\end{question}
-	
-	% 思考题2
-	\begin{question}
-		
-	\end{question}
-	
-	% 思考题3
-	\begin{question}
-		
-	\end{question}
-	
-	% ---
-	
-	
-	% 结语部分
+	\subsection{验证戴维南定理}
+	使用等效电路测得$U=1.304V $   $I=13.074mA$\\
+	\indent 使用N有源网络端口测得$U=1.3077V$   $ I=13.119mA$\\
+	\indent 计算电压的相对误差$r=-0.28\%$ 电流的相对误差$r=0.34\%$\\
+    \indent \textbf{\Large{故可以验证戴维南定理成立！}}
+	\subsection{验证诺顿定理}
+	\indent 测得$U=1.30418V$   $ I=13.016mA$\\
+	\indent 使用N有源网络端口测得$U=1.3077V$   $ I=13.119mA$\\
+	\indent 计算电压的相对误差$r=0.27\%$ 电流的相对误差$r=0.79\%$\\
+	\indent \textbf{\Large{故可以验证诺顿定理成立！}}
+	\subsection{测量实验室函数信号发生器的戴维南等效内阻}
+	\indent 负载为$50\Omega 时\quad U = 4.000\, \text{V} \quad R_w = 52.501\, \Omega $\\
+ \indent 负载为高阻时$ U = 4.041\, \text{V} 时\quad R_w = 52.638\, \Omega$\\
+ \indent \textbf{负载不同时，Rw变化很小.负载 $50\Omega$ 的信号是高负载的两倍}\\
+ \indent \textbf{函数信号发生器的等效内阻是一个重要的参数，它描述了信号发生器在连接到外部负载时所表现出的电阻性质。该参数与信号发生器的内部结构密切相关，包括波形发生电路和输出电路。在连接外部负载时，外部负载与信号发生器的等效内阻构成一个电路，这个电路的特性受到外部负载阻抗的影响，包括输出电压和输出功率的稳定性。一些函数信号发生器具有高阻特性，能够在连接到高阻负载时提供相对稳定的输出信号，不会因负载变化而产生明显的失真或输出电压的变化。}
+
+\subsection{误差分析综述}
+\begin{table}[htbp]
+	\centering
+	\begin{tabular}{|c|c|c|c|c|}
+		\hline
+		& 理论计算 & 直接测量   & 电压零示法 & 电流零示法 \\
+		\hline
+		$U_{OC}/V$ & 4.000    & 3.93 & 3.93 & 3.93 \\
+		\hline
+		相对误差  &    /  & -1.75\% & -1.75\%&-1.75\% \\
+		\hline
+	\end{tabular}
+	\caption{测量有源一端口网络开路电压实验数据}
+\end{table}
+
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{|c|c|c|c|c|c|}
+		\hline
+		 & 理论计算 & 开路电压、短路电流法 & 伏安法 & 半流法 & 半压法 \\
+		\hline
+		 $R_{eq}/\Omega$  & 200  & 200.418     & 199.402& 196.341   & 196.941    \\
+		 \hline
+		相对误差 & / & 0.209\% & $-0.299\%$  & $-1.830\%$ & $-1.530\%$  \\
+		\hline
+	\end{tabular}
+	\caption{测量有源一端口网络等效电阻实验数据}
+\end{table}
+\quad \\
+\quad \\
+概括上述误差分析和综合对比各个实验的相对误差，可以看出：
+\begin{itemize}
+    \item \textbf{直接测量法与间接测量法比较}:
+    \begin{itemize}
+        \item 直接测量法的相对误差为$-1.75\%$。主要误差可能来自于网络内部电阻与设定阻值不同，导致内阻增大，从而引起电压减小、短路电流减少。
+        \item 间接测量法中，电压零示法和电流零示法的相对误差均为 $-1.75\%$。可能误差来源包括电压表、电流表的调零及内阻增大，但测量值仍在附近，表明误差主要由内阻引起。
+    \end{itemize}
+    \item \textbf{测量等效电阻的不同方法比较}:
+    \begin{itemize}
+        \item 开路电压、短路电流法得到的相对误差为 $0.209\%$。可能误差来自电流表的内阻导致电路总电阻增大。
+        \item 伏安法得到的相对误差为 $-0.299\%$。误差相比其他方法明显偏小，说明通过线性拟合的方式得到了较为准确的结果。
+        \item 半流法和半压法的相对误差分别为 $-1.830\%$ 和 $-1.530\%$。可能误差来源包括电表示数精度问题、目标电流或电压的波动、仪器误差以及主观操作引入的误差。
+    \end{itemize}
+    
+\end{itemize}
+
+
 	\clearpage
-	
-	% 小标题
+
 	\section{ET4戴维南定理和诺顿定理\quad\heiti 结语}
 	% ---
 	
-	% 总结、杂谈与致谢
+	
 	\subsection{实验心得和体会、意见建议等}
 	\begin{enumerate}
-		\item 
+		\item 实验总体过程属于思路非常清晰，从一开始测量简单的开路电压短路电流测量到最后验证两个定理，体现了由浅入深的难度和实验思路，实验过程中体验很好。
+		\item 实验过程中会出现一些接线问题，通过对于实验仪器的逐渐熟悉，现在已经能够快速地找到适合本次实验仪器接口的接线，于是能够很快的完成实验。
+		\item 实验的误差分析相对来说属于对于同样的误差进行分析，相关讨论见误差分析部分，这说明可能是由于实验教学电路板的仪器误差导致的，所以实验总体误差来说似乎来源于同样的问题。
+		\item \textbf{本实验报告采用LATEX编辑，实验分工为黄罗琳同学负责记录数据、编辑报告、误差分析，王显同学负责实验操作、误差分析、数据绘图。}
 	\end{enumerate}
+	\quad \large \textbf{感谢您对于此篇实验报告的阅读与批改，祝您工作顺利！}
 	% ---
 	
 
 	% 附件
-	\subsection{附件及实验相关的软硬件资料等}
-	试验台桌面整理如%\cref{}所示。
+	\subsection{附件}
 	
-	实验报告个人签名如
+	\begin{figure}[H]
+		\begin{minipage}[b]{0.45\linewidth}
+			\centering
+			\includegraphics[width=0.4\linewidth]{数据1.jpg}
+			\caption{原始数据}
+		\end{minipage}
+		\hfill
+		\begin{minipage}[b]{0.45\linewidth}
+			\centering
+			\includegraphics[width=0.4\linewidth]{数据2.jpg}
+			\caption{原始数据}
+		\end{minipage}
+	\end{figure}
+	
+	\begin{figure}[H]
+		\begin{minipage}[b]{0.45\linewidth}
+			\centering
+			\includegraphics[width=0.4\linewidth]{数据3.jpg}
+			\caption{原始数据}
+		\end{minipage}
+		\hfill
+		\begin{minipage}[b]{0.45\linewidth}
+			\centering
+			\includegraphics[width=0.4\linewidth]{桌面.jpg}
+			\caption{实验桌面整理}
+		\end{minipage}
+	\end{figure}
+	
+	
+	
 
 	% ---
 	

@@ -60,12 +60,7 @@
 		\end{enumerate}
 		\textbf{实验报告就是将预习报告、实验记录、和数据处理与分析合起来，加上本页封面。\textcolor{red}{（80分）}}
 		\item 每次完成实验后的一周内交\textbf{实验报告}（特殊情况不能超过两周）。
-		\item \textbf{其它注意事项}：
-		\begin{enumerate}
-			\item 请认真查看并理解实验讲义第一章内容；
-			\item 注意实验器材的合理使用；
-			\item 使用结束使用各种仪器之后需要将其放回原位。
-		\end{enumerate}
+		
 	\end{enumerate}
 	
 	% 安全
@@ -164,18 +159,16 @@
 
 
 
-		在微分电路中，方波脉宽的要求与电路的时间常数$\tau$有关。时间常数是由电阻$R$和电容$C$的值决定的，计算公式为$ \tau = R \times C$。对于此电路，R = 5.1KΩ 和 $C_1$​ = 0.1μF，时间常数 $\tau$ 可以计算如下：
+		在微分电路中，方波脉宽的要求与电路的时间常数$\tau$有关。时间常数是由电阻$R$和电容$C$的值决定的，公式为$ \tau = R \times C$。对于R = 5.1KΩ 和 $C_1$​ = 0.1μF，时间常数 $\tau$ 可以计算如下：
 		\[
 			\tau=R\times C_1​=5.1\times10^3\Omega×0.1×10^{−6}F=5.1×10^{−4}s
 		\]
-		
-		在微分电路中，为了使电路正常工作，方波的脉宽$Tp$应远大于电路的时间常数，通常至少是时间常数的20倍以上。这样，电路才能对输入信号进行有效的微分。如果方波脉宽太短，电容将无法在每个脉冲之间充分放电，导致输出信号失真。
-		则对于此电路，方波脉宽的要求大致为：
+		方波脉宽：
 		\[
 			Tp\gg20\tau=20×5.1×10^{−4}s=10.2ms
 		\]
 		
-		这意味着方波脉宽应远大于10.2ms才能确保电路正常工作。
+		方波脉宽应大于10.2ms才能正常工作。
 
 		\begin{figure}[htbp]
 			\centering
@@ -205,7 +198,7 @@
 			\hline
 			室温： & 25℃ & 实验地点： & A522 \\
 			\hline
-			学生签名：&  & 评分： &\\
+			学生签名：& \includegraphics[width=1cm]{签字.jpg} \includegraphics[width=1cm]{wx.jpg} & 评分： &\\
 			\hline
 			实验时间：& 2024/3/27 & 教师签名：&\\
 			\hline
@@ -224,12 +217,10 @@
 	\subsubsection{实验步骤}
 \begin{enumerate}
 	 \item  RC微分电路如图2所示，调节方波仪输出频率，使方波脉冲宽度满足微分电路的必要条件，将R2、R4分别接入，观察微分电路输出有何不同，并记录相关数据和波形图像。
-	 \item RL 微分电路如图3所示，调节方波仪输出频率，使方波脉冲宽度满足微分电路的必要条件，将 R1、 R3分别
-	 接入，观察微分电路输出有何不同，并记录相关数据和波形图像。
-	 \item RC 积分电路如图4所示，在方波脉冲宽度满足积分电路必要条件下将 R1、 R3 分别接入，观察积分电路输出
-	 有何不同， 并记录相关数据和波形图像。
-	 \item RL 积分电路如图5所示，在方波脉冲宽度满足积分电路必要条件下，将 R2、 R4 分别接入，观察积分电路输
-	 出有何不同， 并记录相关数据和波形图像。
+	 \item RL 微分电路如图3所示，调节方波仪输出频率，使方波脉冲宽度满足微分电路的必要条件，将 R1、 R3分别接入，观察微分电路输出有何不同，并记录相关数据和波形图像。
+	 \item RC 积分电路如图4所示，在方波脉冲宽度满足积分电路必要条件下将 R1、 R3 分别接入，得到正确实验图像和在低频率下测得时间常数。
+	 \item RL 积分电路如图5所示，在方波脉冲宽度满足积分电路必要条件下，将 R2、 R4 分别接入，记录积分电路的尖脉冲和测得时间常数。
+	 \item \textbf{实验相关数据结果见实验数据分析讨论}
 	\end{enumerate}
 	 \begin{figure}[H]
 		\begin{minipage}[b]{0.5\linewidth}
@@ -248,7 +239,7 @@
 		\begin{minipage}[b]{0.5\linewidth}
 		  \centering
 		  \includegraphics[width=\linewidth]{RC积分电路.png}
-		  \caption{RC积分电路}
+		  \caption{RC积分电路（三角波）}
 		\end{minipage}
 		\hfill
 		\begin{minipage}[b]{0.5\linewidth}
@@ -310,12 +301,30 @@
 $V_{pp}=572 \times 10^{-3}V$ \quad $T=10ms$
 \begin{figure}[{H}]
 	\centering
-	\includegraphics[width=0.4\linewidth]{RC积分电路5.1-100.jpg}
+	\includegraphics[width=0.3\linewidth]{RC积分电路5.1-100.jpg}
 	\caption{RC积分电路5.1KΩ示波器图像}
 	\label{}
 \end{figure}
 实验所设参数为$R_3=5.1\text{k}\Omega\text{,}\quad C_1=10\mu\text{F},\quad f=100H\text{z}$\\
-$V_{pp}=360 \times 10^{-3}V$ \quad $T=10ms$
+$V_{pp}=360 \times 10^{-3}V$ \quad $T=10ms$\\
+\textbf{为了测量RC积分电路的时间常数，通过减小频率获取到如下图像}
+\begin{figure}[{H}]
+	\centering
+	\includegraphics[width=0.3\linewidth]{RC积分电路1hz.jpg}
+	\caption{RC积分电路低频率3.0KΩ示波器图像}
+	\label{}
+\end{figure}
+实验所设参数为$R_1=3.0\text{k}\Omega\text{,}\quad C_1=10\mu\text{F},\quad f=1H\text{z}$\\
+如图12所示，实验结果为测得时间常数$\tau=0.031s$\\
+\begin{figure}[{H}]
+	\centering
+	\includegraphics[width=0.3\linewidth]{RC积分电路5.1 1hz.jpg}
+	\caption{RC积分电路低频率5.1KΩ示波器图像}
+	\label{}
+\end{figure}
+连接5.1$k\Omega$电阻，得到图13所示图像
+实验所设参数为$R_3=5.1\text{k}\Omega\text{,}\quad C_1=10\mu\text{F},\quad f=1H\text{z}$\\
+实验结果为测得时间常数$\tau=0.051s$\\
 \item RL积分电路 
  \begin{figure}[{H}]
 	\centering
@@ -327,12 +336,34 @@ $V_{pp}=360 \times 10^{-3}V$ \quad $T=10ms$
 $V_{pp}=2.98 V$ \quad $T=50\mu s$
 \begin{figure}[{H}]
 	\centering
-	\includegraphics[width=0.4\linewidth]{RL积分电路2.4.jpg}
+	\includegraphics[width=0.3\linewidth]{RL积分电路2.4.jpg}
 	\caption{RL积分电路2.4KΩ示波器图像}
 	\label{}
 \end{figure}
 实验所设参数为$R_4=2.4\text{k}\Omega\text{,}\quad L_1=100m\text{H},\quad f=20KH\text{z}$\\
-$V_{pp}=1.60 V$ \quad $T=50\mu s$
+$V_{pp}=1.60 V$ \quad $T=50\mu s$\\
+
+\begin{figure}[{H}]
+	\centering
+	\includegraphics[width=0.3\linewidth]{RL积分1hz5.1.jpg}
+	\caption{RL积分电路5.1KΩ低频率示波器图像}
+	\label{}
+\end{figure}
+计算时间常数，将频率调低。\\
+实验所设参数为$R_2=5.1\text{k}\Omega\text{,}\quad L_1=100m\text{H},\quad f=100H\text{z}$\\
+实验结果为测得时间常数$\tau=1.96 \times 10^{-5}s$
+
+
+\begin{figure}[{H}]
+	\centering
+	\includegraphics[width=0.4\linewidth]{RL积分电路1hz2.4.jpg}
+	\caption{RL积分电路2.4KΩ低频率示波器图像}
+	\label{}
+\end{figure}
+计算时间常数，将频率调低。\\
+实验所设参数为$R_4=2.4\text{k}\Omega\text{,}\quad L_1=100m\text{H},\quad f=100H\text{z}$\\
+实验结果为测得时间常数$\tau=4.12 \times 10^{-5}s$
+
 
 	\end{enumerate}
 	
@@ -342,7 +373,9 @@ $V_{pp}=1.60 V$ \quad $T=50\mu s$
 	% 问题记录
 	\subsection{实验过程遇到问题及解决办法}
 	\begin{enumerate}
-		\item 
+		\item 实验过程中出现了实验仪器操作的问题，但是通过询问老师解决了对于示波器的操作疑问。
+		\item 实验中出现了示波器图像出现畸变的情况，通过重新接线，并且改变频率的方式得到了正确的图像。
+		
 	\end{enumerate}
 	% ---
 	
@@ -410,7 +443,7 @@ $V_{pp}=1.60 V$ \quad $T=50\mu s$
 	\begin{table}[H]
 		\centering
 		
-		\begin{tabular}{|ccc|}
+		\begin{tabular}{|c|c|c|}
 		\hline
 		电阻 & 值&峰峰值 \\
 		\hline
@@ -421,13 +454,28 @@ $V_{pp}=1.60 V$ \quad $T=50\mu s$
 		\hline
 		\end{tabular}
 		\end{table}
-		观察数据可知，在电容C一定时，电阻R越大，则峰峰值越小。
+		观察数据可知，在电容C一定时，电阻R越大，则峰峰值越小。\\
+        \indent \textbf{时间常数$\tau=RC$}
+		\begin{table}[H]
+			\centering
+			\begin{tabular}{|l|l|l|}
+			\hline
+				~ & R1=3.0KΩ & R3=5.1KΩ \\ \hline
+				理论值 & 0.03s & 0.051s \\ \hline
+				测量值 & 0.031s & 0.051s \\ \hline
+				相对误差 & +3.3\% & 0\% \\ \hline
+			\end{tabular}
+		\end{table}
+		通过对RC积分电路的时间常数的测量，由于结果较为接近，可能是仪器精密度导致的误差引入。可以认为实验获得成功。
+
+
+
 		\subsubsection{RL积分电路}
 	实验数据如下表所示
 	\begin{table}[H]
 		\centering
 		
-		\begin{tabular}{|ccc|}
+		\begin{tabular}{|c|c|c|}
 		\hline
 		电阻 & 值&峰峰值 \\
 		\hline
@@ -438,8 +486,30 @@ $V_{pp}=1.60 V$ \quad $T=50\mu s$
 		\hline
 		\end{tabular}
 		\end{table}
-		观察数据可知，在电感L一定时，电阻R越大，则峰峰值越大。
-	% ---
+		观察数据可知，在电感L一定时，电阻R越大，则峰峰值越大。\\
+		\indent  \textbf{时间常数$\tau=\frac LR$}
+	\begin{table}[H]
+		\centering
+		\begin{tabular}{|l|l|l|}
+		\hline
+			~ & R2=5.1KΩ & R4=2.4KΩ \\ \hline
+			理论值 & 19.6$\mu$s & 4.176$\mu$s \\ \hline
+			测量值 & 19.6$\mu$s & 4.12$\mu$s \\ \hline
+			相对误差 & 0.00\% & -1.19\% \\ \hline
+		\end{tabular}
+	\end{table}
+	实验结果相对误差较小，实验较为成功。
+	\subsubsection{对于积分电路输出三角波的解释（基于林旭东老师解释）}
+	\begin{figure}[{H}]
+		\centering
+		\includegraphics[width=0.4\linewidth]{lxd.jpg}
+		\caption{林老师所绘示意图}
+		\label{}
+	\end{figure}
+	通过林老师的讲解和实验过程中的理解，汇总成如下对于三角波的讨论。\\
+	\indent 如果输入信号是方波，那么输出信号就会是三角波。这是因为积分电路对于输入的方波信号进行积分时，会得到一个斜率为正的线性函数。当这个线性函数达到一定的幅度后，方波输出变为零，此时积分电路的输出会达到一个极限值，然后又开始逆向积分，导致输出信号变成负斜率。这样周期性地进行斜率变化，就会产生输出为三角波形式的信号。总的来说，积分电路的输出波形是由输入信号的积分特性所决定的，而输入信号是方波时，输出就会是三角波。\\
+	\indent 当方波的频率减小时，对积分电路输出三角波形态会产生显著影响。方波的频率降低意味着每个周期内输入信号的变化率减缓。这会导致积分电路在每个周期内有更多的时间来积分输入信号，因此输出的三角波周期也会相应地延长。然而，频率的降低也可能导致积分电路在每个周期内无法充分积分输入信号。当频率降至某个临界点以下时，积分电路可能无法有效地积分输入信号，从而无法输出连续的三角波形。\\
+	\indent \textbf{而在低频率下，所进行的就可以对积分电路时间常数进行测量，这就是实验中RC和RL积分电路的后续时间常数测量实验的原理。}
 	
 	
 	% 结语部分
@@ -452,9 +522,12 @@ $V_{pp}=1.60 V$ \quad $T=50\mu s$
 	% 总结、杂谈与致谢
 	\subsection{实验心得和体会、意见建议等}
 	\begin{enumerate}
-		\item 实验总体难度不大，并且实验原理比较简单，需要将所学的知识更深层次理解
-		\item 此外最后一个实验中对于
+		\item 实验总体难度不大，并且实验原理比较简单，需要将所学的知识更深层次理解，例如在实验过程中询问了林旭东老师频率对于示波器图像为何会出现三角波的物理内涵。如果不对实验内容有所了解，此实验只会是一个黑盒子实验。
+		\item 实验操作过程中锻炼了对于示波器的操作能力，属于实验仪器操作能力得到进步，此外连接实验线路也愈加熟练，实验时间基本上属于缩短趋势。
+		\item \textbf{本实验报告采用LATEX编辑，实验分工为黄罗琳同学负责记录数据、编辑报告、数据分析，王显同学负责实验操作、误差分析、数据绘图。}
+		
 	\end{enumerate}
+	 \quad \large \textbf{感谢您对于此篇实验报告的阅读与批改，祝您工作顺利！}
 	% ---
 	
 
