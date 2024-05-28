@@ -1,0 +1,340 @@
+%!TEX program = xelatex
+\documentclass[dvipsnames, svgnames,a4paper,11pt]{article}
+\input{Settings} 
+\usepackage{lipsum}
+\usepackage{adjustbox}
+\usepackage{rotating}
+%\usepackage{mathrsfs} % 字体
+%\captionsetup[figure]{name=Figure} % 图片形式
+%\captionsetup[table]{name=Table} % 表格形式
+\begin{document}
+	
+	% 实验报告封面	
+	% 顶栏
+
+	
+	% 信息栏
+	
+	
+	% 目录
+
+	
+
+% 设置页面尺寸
+
+\begin{sidewaystable}[!ht]
+    \centering
+    \resizebox{\textheight}{!}{%
+        \begin{tabular}{|*{10}{p{2cm}|}}
+            \hline
+            1N4007 & ~ & ~ & ~ & ~ & ~ & ~ & ~ & ~ & ~ \\[0.35cm] \hline
+            电压U/V & ~ & ~ & ~ & ~ & ~ & ~ & ~ & ~ & ~ \\[0.35cm] \hline
+            电流I/mA & ~ & ~ & ~ & ~ & ~ & ~ & ~ & ~ & ~ \\[0.35cm] \hline
+            电压U/V & ~ & ~ & ~ & ~ & ~ & ~ & ~ & ~ & ~ \\[0.35cm] \hline
+            电流I/mA & ~ & ~ & ~ & ~ & ~ & ~ & ~ & ~ & ~ \\[0.35cm] \hline
+            2CW54 & ~ & ~ & ~ & ~ & ~ & ~ & ~ & ~ & ~ \\[0.35cm] \hline
+            电压U/V & ~ & ~ & ~ & ~ & ~ & ~ & ~ & ~ & ~ \\[0.35cm] \hline
+            电流I/mA & ~ & ~ & ~ & ~ & ~ & ~ & ~ & ~ & ~ \\[0.35cm] \hline
+            电压U/V & ~ & ~ & ~ & ~ & ~ & ~ & ~ & ~ & ~ \\[0.35cm] \hline
+            电流I/mA & ~ & ~ & ~ & ~ & ~ & ~ & ~ & ~ & ~ \\[0.35cm] \hline
+            二极管蓝光 & ~& ~ & ~ & ~ & ~ & ~ & ~ & ~ & ~ \\[0.35cm] \hline
+            电压U/V & ~ & ~ & ~ & ~ & ~ & ~ & ~ & ~ & ~ \\[0.35cm] \hline
+            电流I/mA & ~ & ~ & ~ & ~ & ~ & ~ & ~ & ~ & ~ \\[0.35cm] \hline
+            电压U/V & ~ & ~ & ~ & ~ & ~ & ~ & ~ & ~ & ~ \\[0.35cm] \hline
+            电流I/mA & ~ & ~ & ~ & ~ & ~ & ~ & ~ & ~ & ~ \\[0.35cm] \hline
+            二极管红光 & ~ & ~ & ~ & ~ & ~ & ~ & ~ & ~ & ~ \\[0.35cm] \hline
+            电压U/V & ~ & ~ & ~ & ~ & ~ & ~ & ~ & ~ & ~ \\[0.35cm] \hline
+            电流I/mA & ~ & ~ & ~ & ~ & ~ & ~ & ~ & ~ & ~ \\[0.35cm] \hline
+            电压U/V & ~ & ~ & ~ & ~ & ~ & ~ & ~ & ~ & ~ \\[0.35cm] \hline
+            电流I/mA & ~ & ~ & ~ & ~ & ~ & ~ & ~ & ~ & ~ \\[0.35cm] \hline
+        \end{tabular}%
+    }
+\end{sidewaystable}
+\begin{sidewaystable}[!ht]
+    \centering
+    \begin{tabular}{|*{10}{p{2cm}|}}
+        \hline
+        NPN型三极管3DG6 & ~ & ~ & ~ & ~ & ~ & ~ & ~ & ~ & ~ \\[0.35cm] \hline
+        VCC/V & ~ & ~ & ~ & ~ & ~ & ~ & ~ & ~ & ~ \\[0.35cm] \hline
+        VCE/V & ~ & ~ & ~ & ~ & ~ & ~ & ~ & ~ & ~ \\[0.35cm] \hline
+        i/mA & ~ & ~ & ~ & ~ & ~ & ~ & ~ & ~ & ~ \\[0.35cm] \hline
+        VCC/V & ~ & ~ & ~ & ~ & ~ & ~ & ~ & ~ & ~ \\[0.35cm] \hline
+        VCE/V & ~ & ~ & ~ & ~ & ~ & ~ & ~ & ~ & ~ \\[0.35cm] \hline
+        i/mA & ~ & ~ & ~ & ~ & ~ & ~ & ~ & ~ & ~ \\[0.35cm] \hline
+        VCC/V & ~ & ~ & ~ & ~ & ~ & ~ & ~ & ~ & ~ \\[0.35cm] \hline
+        VCE/V & ~ & ~ & ~ & ~ & ~ & ~ & ~ & ~ & ~ \\[0.35cm] \hline
+        i/mA & ~ & ~ & ~ & ~ & ~ & ~ & ~ & ~ & ~ \\[0.35cm] \hline
+    \end{tabular}
+\end{sidewaystable}
+
+\begin{sidewaystable}[!ht]
+    \centering
+    \begin{tabular}{|*{10}{p{2cm}|}}
+        \hline
+        NPN型三极管3DG6 & ~ & ~ & ~ & ~ & ~ & ~ & ~ & ~ & ~ \\[0.35cm] \hline
+        VCC/V & ~ & ~ & ~ & ~ & ~ & ~ & ~ & ~ & ~ \\[0.35cm] \hline
+        VCE/V & ~ & ~ & ~ & ~ & ~ & ~ & ~ & ~ & ~ \\[0.35cm] \hline
+        i/mA & ~ & ~ & ~ & ~ & ~ & ~ & ~ & ~ & ~ \\[0.35cm] \hline
+        VCC/V & ~ & ~ & ~ & ~ & ~ & ~ & ~ & ~ & ~ \\[0.35cm] \hline
+        VCE/V & ~ & ~ & ~ & ~ & ~ & ~ & ~ & ~ & ~ \\[0.35cm] \hline
+        i/mA & ~ & ~ & ~ & ~ & ~ & ~ & ~ & ~ & ~ \\[0.35cm] \hline
+        VCC/V & ~ & ~ & ~ & ~ & ~ & ~ & ~ & ~ & ~ \\[0.35cm] \hline
+        VCE/V & ~ & ~ & ~ & ~ & ~ & ~ & ~ & ~ & ~ \\[0.35cm] \hline
+        i/mA & ~ & ~ & ~ & ~ & ~ & ~ & ~ & ~ & ~ \\[0.35cm] \hline
+		Vbb/V & ~ & ~ & ~ & ~ & ~ & ~ & ~ & ~ & ~ \\[0.35cm] \hline
+        VBE/V & ~ & ~ & ~ & ~ & ~ & ~ & ~ & ~ & ~ \\[0.35cm] \hline
+        i/mA & ~ & ~ & ~ & ~ & ~ & ~ & ~ & ~ & ~ \\[0.35cm] \hline
+        Vbb/V & ~ & ~ & ~ & ~ & ~ & ~ & ~ & ~ & ~ \\[0.35cm] \hline
+        VBE/V & ~ & ~ & ~ & ~ & ~ & ~ & ~ & ~ & ~ \\[0.35cm] \hline
+        i/mA & ~ & ~ & ~ & ~ & ~ & ~ & ~ & ~ & ~ \\[0.35cm] \hline
+        Vbb/V & ~ & ~ & ~ & ~ & ~ & ~ & ~ & ~ & ~ \\[0.35cm] \hline
+        VCBE/V & ~ & ~ & ~ & ~ & ~ & ~ & ~ & ~ & ~ \\[0.35cm] \hline
+        i/mA & ~ & ~ & ~ & ~ & ~ & ~ & ~ & ~ & ~ \\[0.35cm] \hline
+    \end{tabular}
+\end{sidewaystable}
+
+	
+	\clearpage
+	% 预习报告	
+	
+	% 小标题
+	
+	% ---
+	\begin{table}[h!]
+		\centering
+		\begin{tabular}{|c|c|c|c|}
+		\hline
+		\textbf{实验装置} & \textbf{装置一} & \textbf{使用电压/电流} & \textbf{稳压二极管CW54} \\
+		\hline
+		毫安表IN4007 & 伏特表量程=100Ω & 电压/V ...... & 电流/mA ...... \\
+		\hline
+		稳定二极管（短头） & 伏特表量程=100Ω & 电压/V ...... & 电流/mA ...... \\
+		\hline
+		稳定二极管（长头） & 伏特表量程=100Ω & Vce<\( \frac{1}{4} \)Ubb ...... &  \\
+		\hline
+		NPN型三极管3DG6(3CG12) & 测定输入、输出特性曲线 & Vbb= ...... & Rb= ...... \\
+		\hline
+		NPN型三极管3DG6(3CG12) & 测定Vce= & Rc= ...... & 改变Vbb和Rb的值 ...... \\
+		\hline
+		\end{tabular}
+		\caption{实验装置参数表}
+		\label{table:experiment_device_parameters}
+		\end{table}
+		
+	% 仪器用具
+	\subsection{仪器用具}
+	\begin{table}[htbp]
+		\centering
+		\renewcommand\arraystretch{1.6}
+		% \setlength{\tabcolsep}{10mm}
+		\begin{tabular}{p{0.05\textwidth}|p{0.20\textwidth}|p{0.05\textwidth}|p{0.5\textwidth}}
+			\hline
+			编号& 仪器用具名称 & 数量 &  主要参数（型号，测量范围，测量精度等） \\
+			\hline
+			1&  & 1 &  \\
+			\hline
+		\end{tabular}
+	\end{table}
+	% ---
+	
+	% 原理概述
+	\subsection{原理概述}
+	\begin{enumerate}
+		\item 
+	\end{enumerate}
+	% ---
+	
+	
+	
+	% 实验前思考题
+	\subsection{实验预习题}
+	
+	% 思考题1
+	\begin{question}
+		
+	\end{question}
+	
+	% 思考题2
+	\begin{question}
+		
+	\end{question}
+	
+	% 思考题3
+	\begin{question}
+		
+	\end{question}
+	
+	% ---
+	
+	
+	
+	% 实验记录	
+	\clearpage
+	
+	% 顶栏
+	\begin{table}
+		\renewcommand\arraystretch{1.7}
+		\centering
+		\begin{tabularx}{\textwidth}{|X|X|X|X|}
+			\hline
+			专业： & 物理学 & 年级： & 2022级 \\
+			\hline
+			姓名： &  & 学号： & \\
+			\hline
+			室温： &  & 实验地点： & A522 \\
+			\hline
+			学生签名：& 见\textbf{附件}部分 & 评分： &\\
+			\hline
+			实验时间：& 2024// & 教师签名：&\\
+			\hline
+		\end{tabularx}
+	\end{table}
+	% ---
+	
+	% 小标题
+	\section{ETX 实验名称×××  \quad\heiti 实验记录}
+	% ---
+	
+	% 实验过程记录
+	\subsection{实验内容、步骤与结果}
+	
+	%
+	\subsubsection{操作步骤记录}
+	\begin{enumerate}
+		\item 
+	\end{enumerate}	
+	
+	%
+	\subsubsection{}
+	\begin{enumerate}
+		\item \begin{table}[h]
+			\centering
+			\caption{表格示例}
+			\label{tab:tab1}
+			\begin{tabular}{|c|c|c|c|c|c|}
+				\hline
+				组1/序号i & 1 & 2 & 3 & 4 & 5 \\
+				$v_{1i}(m/s)$ & 1.26 & 1.08 & 1.00 & 0.75 & 0.38 \\
+				$f_{1i}(Hz)$ & 40073 & 40127 & 40105 & 40088 & 40066 \\
+				\hline
+				组2/序号i & 1 & 2 & 3 & 4 & 5 \\
+				$v_{2i}(m/s)$ & 1.21 & 1.06 & 0.99 & 0.52 & 0.57 \\
+				$f_{2i}(Hz)$ & 40143 & 40125 & 40084 & 40080 & 40067 \\
+				\hline
+				组3/序号i & 1 & 2 & 3 & 4 & 5 \\
+				$v_{3i}(m/s)$ & 1.15 & 0.98 & 0.78 & 0.59 & 0.36 \\
+				$f_{3i}(Hz)$ & 40135 & 40115 & 40092 & 40070 & 40044 \\
+				\hline
+			\end{tabular}
+		\end{table}		
+	\end{enumerate}
+	
+	% ---
+	
+	% 原始数据
+	\clearpage
+	\subsection{原始数据记录}
+	实验记录本上的原始数据见%\cref{}（签字）。
+	
+	实验台桌面整理见%\textbf{附件}部分(\cref{})。
+	
+	其它原始数据见%\cref{}。
+	% ---
+	
+	% 问题记录
+	\subsection{实验过程遇到问题及解决办法}
+	\begin{enumerate}
+		\item 
+	\end{enumerate}
+	% ---
+	
+	
+	
+	% 分析与讨论	
+	\clearpage
+	
+	% 顶栏
+	\begin{table}
+		\renewcommand\arraystretch{1.7}
+		\begin{tabularx}{\textwidth}{|X|X|X|X|}
+			\hline
+			专业：& 物理学 &年级：& 2022级\\
+			\hline
+			姓名： &  & 学号：& \\
+			\hline
+			日期：&  & 评分： &\\
+			\hline
+		\end{tabularx}
+	\end{table}
+	% ---
+	
+	% 小标题
+	\section{ETX 实验名称××× \quad\heiti 分析与讨论}
+	% ---
+	
+	% 数据处理
+	\subsection{实验数据分析}
+	
+	%
+	\subsubsection{}
+	\begin{enumerate}
+		\item 
+	\end{enumerate}
+	
+	%
+	\subsubsection{}
+	\begin{enumerate}
+		\item 
+	\end{enumerate}
+	
+	%
+	\subsubsection{}
+	
+	% ---
+	
+	% 实验后思考题
+	\subsection{实验后思考题}
+	
+	%思考题1
+	\begin{question}
+		
+	\end{question}
+	
+	% 思考题2
+	\begin{question}
+		
+	\end{question}
+	
+	% 思考题3
+	\begin{question}
+		
+	\end{question}
+	
+	% ---
+	
+	
+	% 结语部分
+	\clearpage
+	
+	% 小标题
+	\section{ETX 实验名称××× \quad\heiti 结语}
+	% ---
+	
+	% 总结、杂谈与致谢
+	\subsection{实验心得和体会、意见建议等}
+	\begin{enumerate}
+		\item 
+	\end{enumerate}
+	% ---
+	
+
+	% 附件
+	\subsection{附件及实验相关的软硬件资料等}
+	试验台桌面整理如%\cref{}所示。
+	
+	实验报告个人签名如
+
+	% ---
+	
+	
+\end{document}
