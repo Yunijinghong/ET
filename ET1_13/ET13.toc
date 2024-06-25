@@ -1,0 +1,21 @@
+\contentsline {section}{\numberline {1}ET13整流滤波与稳压电路 \hskip 1em\relax \heiti 预习报告}{3}{section.1}%
+\contentsline {subsection}{\numberline {1.1}实验目的}{3}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}仪器用具}{3}{subsection.1.2}%
+\contentsline {subsection}{\numberline {1.3}原理概述}{3}{subsection.1.3}%
+\contentsline {subsection}{\numberline {1.4}实验预习题}{5}{subsection.1.4}%
+\contentsline {section}{\numberline {2}ET13整流滤波与稳压电路 \hskip 1em\relax \heiti 实验记录}{7}{section.2}%
+\contentsline {subsection}{\numberline {2.1}实验内容、步骤与结果}{7}{subsection.2.1}%
+\contentsline {subsubsection}{\numberline {2.1.1}观察实验原始输出波形}{7}{subsubsection.2.1.1}%
+\contentsline {subsubsection}{\numberline {2.1.2}搭建半波整流电路，用示波器观测和记录输出波形}{7}{subsubsection.2.1.2}%
+\contentsline {subsubsection}{\numberline {2.1.3}搭建全波整流电路，用示波器观测和记录输出波形}{8}{subsubsection.2.1.3}%
+\contentsline {subsubsection}{\numberline {2.1.4}在以上两种整流电路中，加入滤波电容，用示波器观测和记录输出波形；调整滤波电容和负载电阻，观测和记录输出纹波的变化规律}{9}{subsubsection.2.1.4}%
+\contentsline {subsubsection}{\numberline {2.1.5}在桥式整流滤波电路中，搭建稳压管并联稳压电路}{11}{subsubsection.2.1.5}%
+\contentsline {subsubsection}{\numberline {2.1.6}在桥式整流滤波电路中，搭建集成三端稳压器稳压电路}{11}{subsubsection.2.1.6}%
+\contentsline {subsection}{\numberline {2.2}实验过程遇到问题及解决办法}{12}{subsection.2.2}%
+\contentsline {section}{\numberline {3}ET13整流滤波与稳压电路 \hskip 1em\relax \heiti 分析与讨论}{13}{section.3}%
+\contentsline {subsection}{\numberline {3.1}实验数据分析}{13}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}实验后思考题}{14}{subsection.3.2}%
+\contentsline {section}{\numberline {4}ET13整流滤波与稳压电路\hskip 1em\relax \heiti 结语}{15}{section.4}%
+\contentsline {subsection}{\numberline {4.1}实验心得和体会、意见建议等}{15}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}附件}{15}{subsection.4.2}%
+\contentsfinish 
